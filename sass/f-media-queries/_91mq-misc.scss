@@ -1,0 +1,96 @@
+@include breakpoint($movil) { //20em 320px
+	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
+		padding-left: 0;
+	}
+} //breakpoint($movil) 20em 320px
+
+@include breakpoint($tablet) { //30em 480px
+	/* Gallery Columns */
+		.gallery-item {
+		max-width: 25%;
+	}
+	.gallery-columns-1 .gallery-item {
+		max-width: 100%;
+	}
+	.gallery-columns-2 .gallery-item {
+		max-width: 50%;
+	}
+	.gallery-columns-3 .gallery-item {
+		max-width: 33.33%;
+	}
+	.gallery-columns-4 .gallery-item {
+		max-width: 25%;
+	}
+} //breakpoint($tablet) 30em 480px
+
+
+@include breakpoint($laptop) { //48em 768px
+	/* Scroll down arrow */
+	.site-header .menu-scroll-down {
+		display: block;
+		padding: 1em;
+		position: absolute;
+		right: 0;
+	}
+	.site-header .menu-scroll-down .icon {
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		-ms-transform: rotate(90deg); /* IE 9 */
+		transform: rotate(90deg);
+	}
+	.site-header .menu-scroll-down {
+		color: #fff;
+		top: 2em;
+	}
+	.site-header .navigation-top .menu-scroll-down {
+		color: #767676;
+		top: 0.7em;
+	}
+	.menu-scroll-down:focus {
+		outline: thin dotted;
+	}
+	.menu-scroll-down .icon {
+		height: 18px;
+		width: 18px;
+	}
+	/* Gallery Columns */
+	.gallery-columns-5 .gallery-item {
+		max-width: 20%;
+	}
+	.gallery-columns-6 .gallery-item {
+		max-width: 16.66%;
+	}
+	.gallery-columns-7 .gallery-item {
+		max-width: 14.28%;
+	}
+	.gallery-columns-8 .gallery-item {
+		max-width: 12.5%;
+	}
+	.gallery-columns-9 .gallery-item {
+		max-width: 11.11%;
+	}
+} //breakpoint($laptop) 48em 768px
+
+
+@include breakpoint($desktop) { //67em 1072px
+
+} // breakpoint($desktop) 67em 1072px
+
+
+@include breakpoint($largedesk) { //79em 1264px
+	.has-sidebar .entry-content blockquote.alignleft {
+		margin-left: -20%;
+	}
+	.blog:not(.has-sidebar) .entry-content blockquote.alignright,
+	.archive:not(.has-sidebar) .entry-content blockquote.alignright,
+	.page-two-column .entry-content blockquote.alignright,
+	.pleiadesmoon-front-page .entry-content blockquote.alignright {
+		margin-right: -20%;
+	}
+} //breakpoint($largedesk) 79em 1264px
+
+@include breakpoint(48em 48.875em) {
+	.admin-bar .site-navigation-fixed.navigation-top,
+	.admin-bar .site-navigation-hidden.navigation-top {
+		top: 46px;
+	}
+} //breakpoint(48em 48.875em)
