@@ -14,15 +14,20 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'pleiadesmoon'); ?></a>
 		<!-- HEADER -->
 		<header id="masthead" class="site-header" role="banner">
-			<?php get_template_part('template-parts/header/header', 'image'); ?>
-			<?php if (has_nav_menu('top')) : ?>
+
+			<div class="site-header-wrapper">
+				<?php get_template_part('template-parts/header/header', 'image'); ?>
+
+				<?php if (has_nav_menu('top')) : ?>
 				<div class="navigation-top">
 					<div class="wrap">
 						<?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
 					</div><!-- .wrap -->
 				</div><!-- .navigation-top -->
-			<?php endif; ?>
-		</header><!-- #masthead -->
+				<?php endif; ?>
+
+			</div><!-- class="site-header-wrapper -->
+		</header><!-- id="masthead" class="site-header" -->
 
 		<?php
 		// If a regular post or page, and not the front page, show the featured image

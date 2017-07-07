@@ -11,14 +11,7 @@
 @include breakpoint($laptop) { //48em 768px
 	/* Navigation */
 	.navigation-top {
-		bottom: 0;
-		font-size: 14px;
-		font-size: 0.875rem;
-		left: 0;
-		position: absolute;
-		right: 0;
-		width: 100%;
-		z-index: 3;
+
 	}
 	.navigation-top .wrap {
 		max-width: 1000px;

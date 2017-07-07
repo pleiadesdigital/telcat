@@ -1,5 +1,9 @@
 @include breakpoint($movil) { //20em 320px
 
+	.site-header {
+		background-color: $blue;
+	} //.site-header
+
 } //breakpoint($movil) 20em 320px
 
 
@@ -17,6 +21,7 @@
 	.site-branding {
 		margin-bottom: 0;
 	}
+	// Original styles
 	.has-header-image.pleiadesmoon-front-page .site-branding,
 	.has-header-video.pleiadesmoon-front-page .site-branding,
 	.has-header-image.home.blog .site-branding,
@@ -76,6 +81,43 @@
 		font-size: 16px;
 		font-size: 1rem;
 	}
+	.site-header-wrapper {
+		border: 2px solid tomato;
+		@include container();
+		.custom-header {
+			border: 2px solid $lightgreen;
+			@include span(4);
+			/* width: 20%;
+			float: left; */
+			overflow: hidden;
+			.site-branding {
+				.wrap {
+					padding: 0px;
+				}
+				margin-bottom: 0px !important;
+				padding: 0px;
+				.site-title {
+					display: none;
+				} //.site-title
+			} //.site-branding
+		} //.custom-header
+
+		.navigation-top {
+			border: 2px solid $orange;
+			@include span(8 at 5);
+			/* width: 75%;
+			float: right; */
+			position: relative;
+			z-index: 3;
+			font-size: 14px;
+			font-size: 0.875rem;
+		}
+
+	}
+
+
+
+
 } //breakpoint($laptop) 48em 768px
 
 
@@ -87,3 +129,25 @@
 @include breakpoint($largedesk) { //79em 1264px
 
 } //breakpoint($largedesk) 79em 1264px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
