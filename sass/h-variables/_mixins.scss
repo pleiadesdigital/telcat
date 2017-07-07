@@ -1,5 +1,6 @@
 // Custom Background Image
-@mixin backImage($image) {
+@mixin backImage($color, $image) {
+	background-color: $color;
 	background-image: url($image);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -10,6 +11,12 @@
 	background-size: cover;
 }
 
-// $headerImage: 'http://localhost/~ronyortiz/sites2017/supremoconsejo/wp-content/themes/pleiades17/assets/images/coffee.jpg';
+$headerimg: 'http://localhost/~ronyortiz/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/assets/images/header-img2.jpg';
+$headerimg2: 'http://localhost/~ronyortiz/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/assets/images/telcat-home-header-bg.jpg';
+$bgcolor: $darkblue;
 
-// $contactImage: 'http://localhost/~ronyortiz/sites2017/acompas/wp-content/themes/pleiades17/assets/images/back-contacto.jpg';
+
+
+
+
+

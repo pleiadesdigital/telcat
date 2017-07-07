@@ -150,7 +150,7 @@ function pleiadesmoon_content_width() {
 		}
 	}
 	// Check if is single post and there is no sidebar.
-	if (is_single() && ! is_active_sidebar('sidebar-1')) {
+	if (is_single() && !is_active_sidebar('sidebar-1')) {
 		$content_width = 740;
 	}
 	$GLOBALS['content_width'] = apply_filters('pleiadesmoon_content_width', $content_width);
@@ -239,19 +239,18 @@ add_action('wp_head', 'pleiadesmoon_colors_css_wrap');
 ********************************************************/
 
 function pleiadesmoon_scripts() {
-
 	// MAIN CSS style.css
 	wp_enqueue_style('pleiadesmoon-style', get_stylesheet_uri());
 	// Fontawesome
 	wp_enqueue_script('pleiades17-fontawesome', 'https://use.fontawesome.com/b1403a6995.js', array(), '20170109', true);
 	// Google Fonts
-	// wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,400,400i,700');
-	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Rokkitt:300,400,500');
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Raleway:300,400,500');
 	// Google Maps
 	wp_enqueue_script('pleiades17-googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDjEcnBmAHgm_LfegO9o84NLPAfBLwVjSY', array(), '20161130', true);
 	// FlexSlider CSS & JS
-	wp_enqueue_style('flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css');
-	wp_enqueue_script('flexslider-js', get_template_directory_uri() . '/assets/js/jquery.flexslider-min.js', array('jquery'), '', true);
+	wp_enqueue_style('flexslider-css', get_template_directory_uri() . '/slider/css/flexslider.css');
+	wp_enqueue_script('flexslider-js', get_template_directory_uri() . '/slider/js/jquery.flexslider-min.js', array('jquery'), '', true);
+	wp_enqueue_script('slider-custom', get_template_directory_uri() . '/slider/js/slider-custom.js', array('jquery'), '', true);
 	// Load IE9 stylesheet, to fix display issues in the Customizer
 	if (is_customize_preview()) {
 		wp_enqueue_style('pleiadesmoon-ie9', get_theme_file_uri('/assets/css/ie9.css' ), array( 'pleiadesmoon-style'), '1.0');

@@ -18,9 +18,7 @@
 @include breakpoint($laptop) { //48em 768px
 
 	// SITE BRANDING
-	.site-branding {
-		margin-bottom: 0;
-	}
+
 	// Original styles
 	.has-header-image.pleiadesmoon-front-page .site-branding,
 	.has-header-video.pleiadesmoon-front-page .site-branding,
@@ -81,14 +79,14 @@
 		font-size: 16px;
 		font-size: 1rem;
 	}
+
+	// HEADER CUSTOM STYLES
 	.site-header-wrapper {
-		border: 2px solid tomato;
+		border: 1px solid $lime;
 		@include container();
 		.custom-header {
-			border: 2px solid $lightgreen;
+			border: 1px solid tomato;
 			@include span(4);
-			/* width: 20%;
-			float: left; */
 			overflow: hidden;
 			.site-branding {
 				.wrap {
@@ -103,17 +101,18 @@
 		} //.custom-header
 
 		.navigation-top {
-			border: 2px solid $orange;
+			border: 1px solid aqua;
 			@include span(8 at 5);
-			/* width: 75%;
-			float: right; */
+			display: block;
+			margin-top: 1em;
+			padding: 0px;
 			position: relative;
 			z-index: 3;
-			font-size: 14px;
-			font-size: 0.875rem;
-		}
+			// font-size: 14px;
+			// font-size: 0.875rem;
+		} //.navigation-top
 
-	}
+	} //.site-header-wrapper
 
 
 
@@ -129,13 +128,6 @@
 @include breakpoint($largedesk) { //79em 1264px
 
 } //breakpoint($largedesk) 79em 1264px
-
-
-
-
-
-
-
 
 
 
