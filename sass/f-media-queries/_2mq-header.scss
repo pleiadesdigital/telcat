@@ -1,7 +1,41 @@
 @include breakpoint($movil) { //20em 320px
 
 	.site-header {
-		background-color: $blue;
+		
+		.site-header-wrapper {
+			@include backImage($bgcolor, $headerimg2);
+			// BRANDING
+			.site-branding {
+				// LOGO
+				.custom-logo-link {
+					display: block;
+					padding: 0.5em 0px;
+					img {
+					 	display: block;
+						height: 50px;
+						width: auto;
+						margin: 0px auto;
+					} //img
+				} //.custom-logo-link
+				// TEXT 
+				.site-branding-text {
+					display: block;
+					.site-title {
+						display: none;
+					} //.site-title
+					.site-description {
+						font-size: 14px;
+						font-size: 0.875rem;
+						font-weight: $normal;
+						font-variant: small-caps;
+						text-align: center;
+						color: rgba($cream, 0.7);
+					} //.site-description
+				} //.site-branding-text
+			} //.site-branding
+		} //.site-header-wrapper
+
+
 	} //.site-header
 
 } //breakpoint($movil) 20em 320px
@@ -82,10 +116,9 @@
 
 	// HEADER CUSTOM STYLES
 	.site-header-wrapper {
-		border: 1px solid $lime;
 		@include container();
+
 		.custom-header {
-			border: 1px solid tomato;
 			@include span(4);
 			overflow: hidden;
 			.site-branding {
@@ -101,7 +134,6 @@
 		} //.custom-header
 
 		.navigation-top {
-			border: 1px solid aqua;
 			@include span(8 at 5);
 			display: block;
 			margin-top: 1em;
@@ -113,8 +145,6 @@
 		} //.navigation-top
 
 	} //.site-header-wrapper
-
-
 
 
 } //breakpoint($laptop) 48em 768px
