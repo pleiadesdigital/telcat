@@ -1,5 +1,16 @@
 @include breakpoint($movil) { //20em 320px
 
+	.main-navigation {
+		.menu-toggle {
+			color: $snow;
+			font-weight: $normal;
+			padding: 0.75em 1em;
+			.icon {
+				font-size: 1em;
+			}
+		} //.menu-toggle
+	} //.main-navigation
+
 } //breakpoint($movil) 20em 320px
 
 
@@ -15,11 +26,10 @@
 	}
 	.navigation-top .wrap {
 		max-width: 1000px;
-		/* The font size is 14px here and we need 50px padding in ems */
-		padding: 0.75em 3.4166666666667em;
+		padding: 0.75em 1em;
 	}
 	.navigation-top nav {
-		margin-left: -1.25em;
+		//margin-left: -1.25em;
 	}
 	.site-navigation-fixed.navigation-top {
 		bottom: auto;
@@ -54,19 +64,25 @@
 		border: 0;
 		margin-bottom: 0;
 		padding: 0;
+		display: flex !important;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
 	}
 	.main-navigation li {
 		border: 0;
-		display: inline-block;
+		border: 1px solid $lime;
 	}
 	.main-navigation li li {
 		display: block;
 	}
 	.main-navigation a {
-		padding: 1em 1.25em;
+		padding: 0.75em 1em;
+		color: $snow;
+		font-weight: $normal;
 	}
 	.main-navigation ul ul {
-		background: #fff;
+		background: rgba($carbon, 0.3);
 		border: 1px solid #bbb;
 		left: -999em;
 		padding: 0;

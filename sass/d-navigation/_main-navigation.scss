@@ -1,7 +1,7 @@
 .navigation-top {
-	background: #fff;
-	border-bottom: 1px solid #eee;
-	border-top: 1px solid #eee;
+	// background: #fff;
+	// border-bottom: 1px solid #eee;
+	// border-top: 1px solid #eee;
 	font-size: 16px;
 	font-size: 1rem;
 	position: relative;
@@ -77,10 +77,14 @@
 	position: relative;
 }
 
-.main-navigation li li,
-.main-navigation li:last-child {
+.main-navigation li li {
 	border: 0;
 }
+
+/* .main-navigation li li,
+.main-navigation li:last-child {
+	border: 0;
+} */
 
 .main-navigation a {
 	display: block;
