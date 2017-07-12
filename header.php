@@ -26,7 +26,24 @@
 				</div><!-- .navigation-top -->
 				<?php endif; ?>
 
+				<!-- SLIDER FRONT -->
+
+				<section id="slider-front" class="slider-front">
+
+						<div id="slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<h1>comunicaciones en todos las capas</h1>
+									<h2>El siguiente nivel de éxito</h2>
+									<button class="slider-btn">Conozca más</button>
+								</li>
+							</ul><!-- class="slides" -->
+						</div><!-- id="slider" class="flexslider" -->
+
+				</section><!-- id="slider-front" class="slider-front" -->
+
 			</div><!-- class="site-header-wrapper -->
+
 		</header><!-- id="masthead" class="site-header" -->
 
 		<?php
