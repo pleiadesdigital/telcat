@@ -4,6 +4,9 @@
 		@include backImage($bgcolor, $headerimg2);
 		height: 100%;
 		width: 100%;
+		&.shfront {
+			height: 80vh;
+		}
 		.site-header-wrapper {
 			.custom-header {
 				// BRANDING

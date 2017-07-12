@@ -32,6 +32,8 @@
 		//margin-left: -1.25em;
 	}
 	.site-navigation-fixed.navigation-top {
+		background-color: rgba($carbon, 0.9);
+		margin-top: 0px;
 		bottom: auto;
 		position: fixed;
 		left: 0;
@@ -66,12 +68,20 @@
 		padding: 0;
 		display: flex !important;
 		justify-content: space-between;
+		align-items: flex-end;
 		flex-wrap: wrap;
 
 	}
-	.main-navigation li {
+	.main-navigation ul li {
 		border: 0;
-		border: 1px solid $lime;
+		border-bottom: 5px solid transparent;
+		&:hover,
+		&:focus {
+			border-bottom: 5px solid $lime;
+		}
+		&:last-child {
+
+		}
 	}
 	.main-navigation li li {
 		display: block;
@@ -80,12 +90,22 @@
 		padding: 0.75em 1em;
 		color: $snow;
 		font-weight: $normal;
+		font-size: 14px;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		text-transform: center;
+		&:hover,
+		&:focus {
+			color: $snow;
+			outline: none;
+		}
 	}
 	.main-navigation ul ul {
-		background: rgba($carbon, 0.3);
-		border: 1px solid #bbb;
+		background: $carbon;
+		border: none;
 		left: -999em;
 		padding: 0;
+		padding-bottom: 1px;
 		position: absolute;
 		top: 100%;
 		z-index: 99999;
@@ -95,14 +115,15 @@
 	.main-navigation ul li.page_item_has_children:before,
 	.main-navigation ul li.page_item_has_children:after {
 		border-style: solid;
-		border-width: 0 6px 6px;
+		border-width: 0px 6px 6px;
 		content: "";
 		display: none;
 		height: 0;
 		position: absolute;
-		right: 1em;
+		right: 10px;
 		bottom: -1px;
 		width: 0;
+		color: rgba($snow, 0.5);
 		z-index: 100000;
 	}
 	.main-navigation ul li.menu-item-has-children.focus:before,
@@ -136,10 +157,12 @@
 	.main-navigation li li {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
+		border-bottom: 1px solid transparent;
 	}
 	.main-navigation li li:hover,
 	.main-navigation li li.focus {
-		background: #767676;
+		background: $carbon;
+		border-bottom: 1px solid $lime;
 	}
 	.main-navigation li li a {
 		-webkit-transition: color 0.3s ease-in-out;
@@ -158,7 +181,7 @@
 	}
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
-		left: 0.5em;
+		left: 0px;
 		right: auto;
 	}
 	.main-navigation .menu-item-has-children > a > .icon,
@@ -197,6 +220,55 @@
 	.site-header .site-navigation-fixed .menu-scroll-down {
 		display: none;
 	}
+
+	// SMALL ADJUSTMENTS
+	.navigation-top .current-menu-item,
+	.navigation-top .current_page_item {
+		border-bottom: 5px solid $midgrey;
+		cursor: default;
+		color: $snow;
+		&:hover,
+		&:focus {
+			border-bottom: 5px solid $midgrey;
+			outline: none;
+			cursor: default;
+		} //&:hover, &:focus
+		a {
+			color: $snow;
+			&:hover,
+			&:focus {
+				cursor: default;
+			} //&:hover, &:focus
+		} //a
+
+	} //.navigation-top .current-menu-item
+
+	.navigation-top .current-menu-parent {
+		border-bottom: 5px solid $midgrey;
+		outline: none;
+		cursor: default;
+	}
+	.sub-menu {
+		.current-menu-item {
+			border-bottom: 1px solid $midgrey;
+			&:hover,
+			&:focus {
+				border-bottom: 1px solid $midgrey;
+			}
+			a {
+				color: $midgrey;
+				&:hover,
+				&:focus {
+					cursor: default;
+					color: $midgrey !important;
+				} //&:hover, &:focus
+			}
+		} //li
+	} //.sub-menu
+
+
+
+
 } //breakpoint($laptop) 48em 768px
 
 
