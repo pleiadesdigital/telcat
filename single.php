@@ -14,6 +14,7 @@
 					the_post_navigation(array(
 						'prev_text' => '<span class="screen-reader-text">' . __('Previous Post', 'pleiadesmoon') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Previous', 'pleiadesmoon') . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . pleiadesmoon_get_svg(array('icon' => 'arrow-left')) . '</span>%title</span>',
 						'next_text' => '<span class="screen-reader-text">' . __('Next Post', 'pleiadesmoon') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Next', 'pleiadesmoon') . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . pleiadesmoon_get_svg( array('icon' => 'arrow-right')) . '</span></span>',
+						'in_same_term'               => true
 					));
 				endwhile;
 			?>

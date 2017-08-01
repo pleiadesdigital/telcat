@@ -1,9 +1,219 @@
+// GRID (SUSY)
+$susy1: (
+	columns: 24,
+	container: 1073px,
+	gutters: 1,
+	gutter-position: inside
+);
+@include layout($susy1);
+
 @include breakpoint($movil) { //20em 320px
+	.content-area {
+		background-color: $snow;
+	}
+
+	// PROD/SERVICES MAIN
+	.prod-services-main {
+		background-color: darken($carbon, 10%);
+		padding: 30px 0px 0px 0px;
+		margin-top: 0px;
+		// @include background(linear-gradient(to bottom, $black, darken($lime, 40%)));
+		// PROD/SERVICES
+		.prod-services {
+			@include container();
+			@include clearfix();
+			padding: 1em;
+			h2 {
+				color: $snow;
+				text-align: center;
+				font-weight: $normal;
+				font-size: 30px;
+				font-size:1.875rem;
+			}
+			p {
+				text-align: center;
+				color: $snow;
+			} //p
+			ul {
+				margin-top: 10px;
+				padding: 0px 0px 1em;
+				display: block;
+				li {
+					width: 100%;
+					margin: 0px 0px 1em;
+					padding: 0px 1em 0px;
+					overflow: hidden;
+					position: relative;
+					background-color: $carbon;
+					border: 1px dotted $snow;
+					@include border-radius(5px);
+					// SERV ICON
+					.serv-icon {
+						clear: both;
+						display: block;
+						margin: 1em auto 0px;
+						width: 100px;
+						padding: 10px 5px 5px 15px;
+						img {
+							// border: 1px solid $white;
+						} //img
+					} //.serv-icon
+					// SERV TEXT
+					.serv-text {
+						margin: 20px 0px 0px;
+						padding: 0px 0px 10px 0px;
+						line-height: 1.2;
+						h3 {
+							color: $cream;
+							text-transform: uppercase;
+							text-align: center;
+							font-family: $copy;
+							font-size: 25px;
+							font-size: 1.5rem;
+							font-weight: $light;
+							a {
+								color: $cream;
+								text-decoration: none;
+								padding: 0px 5px;
+								@include single-transition();
+								&:hover {
+									border-bottom: 1px dotted $cream;
+								} //&:hover
+							} //a
+						} //h3
+						p {
+							text-align: center;
+							color: $snow;
+							line-height: 1.2;
+							font-size: 15px;
+							font-size: 0.9375rem;
+							font-weight: $light;
+							margin: 0px;
+						} //p
+						.link-more {
+							// position: absolute;
+							display: block;
+							width: auto;
+							margin: 2.5em auto 1.5em;
+							vertical-align: center;
+							a {
+								background-color: $black;
+								color: $cream;
+								padding: 1em 2em;
+								@include border-radius(4px);
+								@include single-transition(all, 0.2s, false, false);
+								&:hover {
+									color: $carbon;
+									background-color: $snow;
+								}
+							} //a
+						} //.link-more
+					} //.serv-text
+				} //li
+			} //ul
+		} //.prod-services
+	} //.prod-services-main
+
+	// CREDIBILITY
+	.fp-credibility {
+		width: 100%;
+		background-color: $white;
+		display: flex;
+		align-items: center;
+		.fp-credibility-wrap {
+			@include container();
+			padding: 4em 1em 2em;
+			h2 {
+				text-align: center;
+				font-family: $title;
+				font-size: 28px;
+				font-size: 1.75rem;
+				font-weight: $semibold;
+				text-transform: uppercase;
+				color: $lighterblue;
+			}
+			p {
+				text-align: center;
+				font-size: 20px;
+				font-size: 1.25rem;
+				font-weight: $light;
+				line-height: 1.4;
+				.bold {
+					font-weight: $bold;
+				}
+			}
+		} //.fp-credibility-wrap
+	} //.fp-credibility
+
+	// NOTICIAS / ARTÍCULOS
+	.fp-blog {
+		@include backImage($carbon, $proyectoimg);
+		padding: 3em 0px;
+		h2 {
+			text-align: center;
+			color: $cream;
+			font-weight: $light;
+			font-size: 28px;
+			font-size: 1.75rem;
+			text-transform: uppercase;
+		}
+		.fp-blog-wrap {
+			@include container();
+			padding: 2em 1em;
+			.blog-list { //ul
+				li {
+					display: block;
+					margin-bottom: 2em;
+					border-bottom: 1px dotted $snow;
+					img {
+						width: 100%;
+						height: 200px;
+					} //img
+					h3 {
+						text-align: center;
+						color: $cream;
+						text-transform: uppercase;
+						font-size: 18px;
+						font-size: 1.125rem;
+						padding: 0px;
+						margin: 0px;
+						height: 90px;
+					} //h3
+					p {
+						color: $white;
+						font-weight: $light;
+						line-height: 1.3;
+						font-size: 14px;
+						font-size: 0.875;
+						height: 50px;
+					} //p
+					.link-more {
+						// position: absolute;
+						display: block;
+						width: 130px;
+						margin: 3em 0px 2em;
+						vertical-align: center;
+						a {
+							background-color: $black;
+							color: $cream;
+							padding: 1em 2em;
+							@include border-radius(4px);
+							@include single-transition(all, 0.2s, false, false);
+							&:hover {
+								color: $carbon;
+								background-color: $snow;
+							}
+						} //a
+					} //.link-more
+				} //li
+			} //.blog-list
+		} //.fp-blog-wrap
+	}//.fp-blog
 
 } //breakpoint($movil) 20em 320px
 
-
 @include breakpoint($tablet) { //30em 480px
+	// ORIGINAL STYLES
 	.panel-content .wrap {
 		padding-bottom: 2em;
 		padding-top: 3.5em;
@@ -17,11 +227,71 @@
 	.panel-content .recent-posts .entry-header {
 		margin-bottom: 0;
 	}
+
+	// PROD/SERVICES MAIN
+	.prod-services-main {
+
+		// PROD/SERVICES
+		.prod-services {
+
+			h2 {
+
+			}
+			p {
+
+			} //p
+			ul {
+				// display: flex;
+				li {
+					height: 350px;
+					// SERV ICON
+					.serv-icon {
+
+						img {
+
+						} //img
+					} //.serv-icon
+					// SERV TEXT
+					.serv-text {
+
+						h3 {
+
+							a {
+
+								&:hover {
+
+								} //&:hover
+							} //a
+						} //h3
+						p {
+
+						} //p
+						.link-more {
+							position: absolute;
+							margin-left: auto;
+							margin-right: auto;
+							bottom: 1em;
+							vertical-align: middle;
+							left: 0;
+							right: 0;
+							a {
+
+								&:hover {
+
+								}
+							} //a
+						} //.read-more
+					} //.serv-text
+				} //li
+			} //ul
+		} //.prod-services
+	} //.prod-services-main
+
+
 } //breakpoint($tablet) 30em 480px
 
-
 @include breakpoint($laptop) { //48em 768px
-	/* Front Page */
+	// Front Page ORIGINAL styles
 	.pleiadesmoon-front-page.has-header-image .site-branding,
 	.pleiadesmoon-front-page.has-header-video .site-branding,
 	.home.blog.has-header-image .site-branding,
@@ -92,13 +362,195 @@
 		font-size: 26px;
 		font-size: 1.625rem;
 	}
-} //breakpoint($laptop) 48em 768px
 
+	// PROD/SERVICES MAIN
+	.prod-services-main {
+
+		// PROD/SERVICES
+		.prod-services {
+
+			h2 {
+				font-size: 34px;
+				font-size: 2.125rem;
+				text-transform: uppercase;
+				font-weight: $light;
+			}
+			p {
+
+			} //p
+			ul {
+				// @include container();
+				display: flex;
+				justify-content: space-around;
+				align-items:flex-end;
+				flex-wrap: wrap;
+				li {
+					width: 350px;
+					height: 430px;
+					margin-bottom: 2em;
+					// SERV ICON
+					.serv-icon {
+
+						img {
+
+						} //img
+					} //.serv-icon
+					// SERV TEXT
+					.serv-text {
+
+						h3 {
+							height: 60px;
+							a {
+
+								&:hover {
+
+								} //&:hover
+							} //a
+						} //h3
+						p {
+							margin-bottom: 1em;
+						} //p
+						.link-more {
+							position: absolute;
+							margin-left: auto;
+							margin-right: auto;
+							bottom: 1em;
+							vertical-align: middle;
+							left: 0;
+							right: 0;
+							a {
+
+								&:hover {
+
+								}
+							} //a
+						} //.read-more
+					} //.serv-text
+				} //li
+			} //ul
+		} //.prod-services
+	} //.prod-services-main
+
+
+	// CREDIBILITY
+	.fp-credibility {
+
+		.fp-credibility-wrap {
+			@include container();
+			max-width: 750px;
+			h2 {
+				font-size: 34px;
+				font-size: 2.125rem;
+			}
+			p {
+				font-size: 24px;
+				font-size: 1.5rem;
+				.bold {
+
+				}
+			}
+		} //.fp-credibility-wrap
+	} //.fp-credibility
+
+	// // NOTICIAS / ARTÍCULOS
+	.fp-blog {
+
+		h2 {
+			font-size: 34px;
+			font-size: 2.125rem;
+		}
+		.fp-blog-wrap {
+
+			.blog-list {
+				display: flex;
+				flex-wrap: no-wrap;
+				justify-content: space-around;
+				align-items: flex-end;
+				li {
+					flex-grow: 1;
+					flex-basis: 0;
+					margin-right: 1em;
+					&:last-child {
+						margin-right: 0px;
+					}
+					img {
+
+					} //img
+					h3 {
+
+					} //h3
+					p {
+
+					} //p
+				} //li
+			} //.blog-list
+		} //.fp-blog-wrap
+	}//.fp-blog
+
+
+
+} //breakpoint($laptop) 48em 768px
 
 @include breakpoint($desktop) { //67em 1072px
 
-} // breakpoint($desktop) 67em 1072px
+	// PROD/SERVICES MAIN
+	.prod-services-main {
+		// PROD/SERVICES
+		.prod-services {
 
+			h2 {
+
+			}
+			p {
+
+			} //p
+			ul {
+				// @include container();
+				display: flex;
+				justify-content: space-around;
+				align-items:flex-end;
+				flex-wrap: wrap;
+				li {
+					width: 250px;
+
+					// SERV ICON
+					.serv-icon {
+
+						img {
+
+						} //img
+					} //.serv-icon
+					// SERV TEXT
+					.serv-text {
+
+						h3 {
+							font-style: 22px;
+							font-size: 1.375rem;
+							a {
+
+								&:hover {
+
+								} //&:hover
+							} //a
+						} //h3
+						p {
+
+						} //p
+						.link-more {
+
+							a {
+
+								&:hover {
+
+								}
+							} //a
+						} //.read-more
+					} //.serv-text
+				} //li
+			} //ul
+		} //.prod-services
+	} //.prod-services-main
+} // breakpoint($desktop) 67em 1072px
 
 @include breakpoint($largedesk) { //79em 1264px
 

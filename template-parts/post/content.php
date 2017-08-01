@@ -1,4 +1,4 @@
-<?php /* Template part for displaying posts */ ?>
+<?php /* Template Part for displaying regular content posts */ ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
@@ -14,21 +14,19 @@
 						pleiadesmoon_posted_on();
 					else :
 						echo pleiadesmoon_time_link();
-						pleiadesmoon_edit_link();
+						// pleiadesmoon_edit_link();
 					endif;
 				echo '</div><!-- .entry-meta -->';
 			endif;
-
 			if (is_single()) {
 				the_title('<h1 class="entry-title">', '</h1>');
-			} elseif (is_front_page() && is_home()) {
-				the_title('<h3 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h3>');
 			} else {
 				the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
 			}
 		?>
 	</header><!-- .entry-header -->
 
+	<!-- POST THUMBNAIL -->
 	<?php if ('' !== get_the_post_thumbnail() && !is_single()) : ?>
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>">
@@ -39,12 +37,14 @@
 
 	<div class="entry-content">
 		<?php
-			/* translators: %s: Name of current post */
-			the_content(sprintf(
+			if (is_single()) {
+				the_content(sprintf(
 				__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'pleiadesmoon'),
-				get_the_title()
-			));
-
+					get_the_title()
+				));
+			} else {
+			the_excerpt();
+		}
 			wp_link_pages(array(
 				'before'      => '<div class="page-links">' . __('Pages:', 'pleiadesmoon'),
 				'after'       => '</div>',

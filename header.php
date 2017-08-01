@@ -27,28 +27,26 @@
 				<?php endif; ?>
 
 				<!-- SLIDER FRONT -->
-
+			<?php if (is_front_page()) { ?>
 				<section id="slider-front" class="slider-front">
-
 						<div id="slider" class="flexslider">
 							<ul class="slides">
 								<li>
-									<h1>comunicaciones en todos las capas</h1>
-									<h2>El siguiente nivel de éxito</h2>
+									<h1>comunicaciones en todas las capas</h1>
+									<h2>el siguiente nivel de éxito</h2>
 									<button class="slider-btn">Conozca más</button>
 								</li>
 							</ul><!-- class="slides" -->
 						</div><!-- id="slider" class="flexslider" -->
-
 				</section><!-- id="slider-front" class="slider-front" -->
-
+			<?php } ?>
 			</div><!-- class="site-header-wrapper -->
 
 		</header><!-- id="masthead" class="site-header" -->
 
 		<?php
 		// If a regular post or page, and not the front page, show the featured image
-		if (has_post_thumbnail() && (is_single() || (is_page() &&!pleiadesmoon_is_frontpage()))) :
+		if (has_post_thumbnail() && (is_single() || (is_page() && !pleiadesmoon_is_frontpage())) && !is_page()) :
 			echo '<div class="single-featured-image-header">';
 			the_post_thumbnail('pleiadesmoon-featured-image');
 			echo '</div><!-- .single-featured-image-header -->';

@@ -20,6 +20,8 @@
 	font-size: 16px;
 	font-size: 1rem;
 	margin-bottom: 1em;
+	border-top: 1px dotted $carbon;
+	padding-top: 2em;
 }
 
 .social-navigation ul {
@@ -62,6 +64,12 @@
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-bottom: 1em;
+	.copyright {
+		color: $darksilver;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
 }
 
 .site-info a {

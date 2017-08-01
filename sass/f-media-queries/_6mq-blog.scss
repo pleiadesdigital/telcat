@@ -1,5 +1,12 @@
 @include breakpoint($movil) { //20em 320px
 
+	// single posts CUSTOM STYLES
+	.single {
+		.content-area {
+			background-color: $white;
+		} //.content-area
+	} //.single
+
 } //breakpoint($movil) 20em 320px
 
 
