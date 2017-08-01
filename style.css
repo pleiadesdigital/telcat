@@ -4905,13 +4905,13 @@ F. Media Queries
     background-color: #f2f2f2;
   }
 
-  /* line 16, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 15, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main {
     background-color: #1a1a1a;
     padding: 30px 0px 0px 0px;
     margin-top: 0px;
   }
-  /* line 22, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 21, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services {
     max-width: 1073px;
     margin-left: auto;
@@ -4926,13 +4926,14 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 26, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 25, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services h2 {
     color: #f2f2f2;
     text-align: center;
     font-weight: 400;
     font-size: 30px;
     font-size: 1.875rem;
+    text-transform: uppercase;
   }
   /* line 33, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services p {
@@ -5086,7 +5087,7 @@ F. Media Queries
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 3em 0px;
+    padding: 0px;
   }
   /* line 152, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-blog h2 {
@@ -5145,7 +5146,7 @@ F. Media Queries
   .fp-blog .fp-blog-wrap .blog-list li .link-more {
     display: block;
     width: 130px;
-    margin: 3em 0px 2em;
+    margin: 3em auto 2em;
     vertical-align: center;
   }
   /* line 196, sass/f-media-queries/_8mq-frontpage.scss */
@@ -5189,23 +5190,88 @@ F. Media Queries
     margin-bottom: 0;
   }
 
-  /* line 245, sass/f-media-queries/_8mq-frontpage.scss */
-  .prod-services-main .prod-services ul li {
-    height: 350px;
+  /* line 243, sass/f-media-queries/_8mq-frontpage.scss */
+  .prod-services-main .prod-services ul {
+    padding-bottom: 0px;
   }
-  /* line 269, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 246, sass/f-media-queries/_8mq-frontpage.scss */
+  .prod-services-main .prod-services ul li {
+    width: 80%;
+    height: 350px;
+    margin: 0px auto 2em;
+  }
+  /* line 251, sass/f-media-queries/_8mq-frontpage.scss */
+  .prod-services-main .prod-services ul li .serv-icon {
+    padding-bottom: 0px;
+  }
+  /* line 258, sass/f-media-queries/_8mq-frontpage.scss */
+  .prod-services-main .prod-services ul li .serv-text {
+    margin-top: 5px;
+    padding-bottom: 20px;
+  }
+  /* line 273, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li .serv-text .link-more {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    bottom: 1em;
+    bottom: 0;
     vertical-align: middle;
     left: 0;
     right: 0;
   }
+
+  /* line 300, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  /* line 305, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li {
+    width: 45%;
+    margin-right: 1em;
+  }
+  /* line 310, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li:last-child {
+    margin-right: 0px;
+  }
+  /* line 316, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+  }
+  /* line 327, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more {
+    display: block;
+    width: 130px;
+    margin: 4em auto 1em;
+    vertical-align: center;
+  }
+  /* line 333, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more a {
+    background-color: #000000;
+    color: #fffdf3;
+    padding: 1em 2em;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  /* line 339, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more a:hover {
+    color: #333333;
+    background-color: #f2f2f2;
+  }
 }
 @media (min-width: 768px) {
-  /* line 295, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 354, sass/f-media-queries/_8mq-frontpage.scss */
   .pleiadesmoon-front-page.has-header-image .site-branding,
   .pleiadesmoon-front-page.has-header-video .site-branding,
   .home.blog.has-header-image .site-branding,
@@ -5213,7 +5279,7 @@ F. Media Queries
     margin-bottom: 70px;
   }
 
-  /* line 301, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 360, sass/f-media-queries/_8mq-frontpage.scss */
   .pleiadesmoon-front-page.has-header-image .custom-header-media,
   .pleiadesmoon-front-page.has-header-video .custom-header-media,
   .home.blog.has-header-image .custom-header-media,
@@ -5224,7 +5290,7 @@ F. Media Queries
     overflow: hidden;
   }
 
-  /* line 310, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 369, sass/f-media-queries/_8mq-frontpage.scss */
   .pleiadesmoon-front-page.has-header-image .custom-header-media:before,
   .pleiadesmoon-front-page.has-header-video .custom-header-media:before,
   .home.blog.has-header-image .custom-header-media:before,
@@ -5232,7 +5298,7 @@ F. Media Queries
     height: 33%;
   }
 
-  /* line 316, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 375, sass/f-media-queries/_8mq-frontpage.scss */
   .admin-bar.pleiadesmoon-front-page.has-header-image .custom-header-media,
   .admin-bar.pleiadesmoon-front-page.has-header-video .custom-header-media,
   .admin-bar.home.blog.has-header-image .custom-header-media,
@@ -5240,50 +5306,50 @@ F. Media Queries
     height: calc(100vh - 32px);
   }
 
-  /* line 322, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 381, sass/f-media-queries/_8mq-frontpage.scss */
   .panel-content .wrap {
     padding-bottom: 4.5em;
     padding-top: 6em;
   }
 
-  /* line 326, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 385, sass/f-media-queries/_8mq-frontpage.scss */
   .panel-image {
     height: 100vh;
     max-height: 1200px;
   }
 
   /* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
-  /* line 331, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 390, sass/f-media-queries/_8mq-frontpage.scss */
   .background-fixed .panel-image {
     background-attachment: fixed;
   }
 
-  /* line 334, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 393, sass/f-media-queries/_8mq-frontpage.scss */
   .page-two-column .panel-content .entry-header {
     float: left;
     width: 36%;
   }
 
-  /* line 338, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 397, sass/f-media-queries/_8mq-frontpage.scss */
   .page-two-column .panel-content .entry-content {
     float: right;
     width: 58%;
   }
 
   /* Front Page - Recent Posts */
-  /* line 343, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 402, sass/f-media-queries/_8mq-frontpage.scss */
   .page-two-column .panel-content .recent-posts {
     clear: right;
     float: right;
     width: 58%;
   }
 
-  /* line 348, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 407, sass/f-media-queries/_8mq-frontpage.scss */
   .panel-content .recent-posts article {
     margin-bottom: 4em;
   }
 
-  /* line 351, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 410, sass/f-media-queries/_8mq-frontpage.scss */
   .panel-content .recent-posts .entry-header,
   .page-two-column #primary .panel-content .recent-posts .entry-header,
   .panel-content .recent-posts .entry-content,
@@ -5292,46 +5358,50 @@ F. Media Queries
     width: 100%;
   }
 
-  /* line 358, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 417, sass/f-media-queries/_8mq-frontpage.scss */
   .panel-content .recent-posts .entry-header {
     margin-bottom: 1.5em;
   }
 
-  /* line 361, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 420, sass/f-media-queries/_8mq-frontpage.scss */
   .page .panel-content .recent-posts .entry-title {
     font-size: 26px;
     font-size: 1.625rem;
   }
 
-  /* line 372, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 430, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services h2 {
     font-size: 34px;
     font-size: 2.125rem;
     text-transform: uppercase;
     font-weight: 300;
   }
-  /* line 381, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 439, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
   }
-  /* line 387, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 445, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li {
     width: 350px;
-    height: 430px;
+    height: 400px;
     margin-bottom: 2em;
   }
-  /* line 401, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 457, sass/f-media-queries/_8mq-frontpage.scss */
+  .prod-services-main .prod-services ul li .serv-text {
+    margin: 20px 0px 0px;
+  }
+  /* line 459, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li .serv-text h3 {
     height: 60px;
   }
-  /* line 410, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 468, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li .serv-text p {
     margin-bottom: 1em;
   }
-  /* line 413, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 471, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li .serv-text .link-more {
     position: absolute;
     margin-left: auto;
@@ -5342,7 +5412,7 @@ F. Media Queries
     right: 0;
   }
 
-  /* line 438, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 496, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-credibility .fp-credibility-wrap {
     max-width: 1073px;
     margin-left: auto;
@@ -5355,56 +5425,94 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 441, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 499, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-credibility .fp-credibility-wrap h2 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 445, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 503, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-credibility .fp-credibility-wrap p {
     font-size: 24px;
     font-size: 1.5rem;
   }
 
-  /* line 458, sass/f-media-queries/_8mq-frontpage.scss */
-  .fp-blog h2 {
+  /* line 516, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap h2 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 464, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 520, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-blog .fp-blog-wrap .blog-list {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: space-around;
     align-items: flex-end;
   }
-  /* line 469, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 525, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-blog .fp-blog-wrap .blog-list li {
     flex-grow: 1;
     flex-basis: 0;
     margin-right: 1em;
   }
-  /* line 473, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 529, sass/f-media-queries/_8mq-frontpage.scss */
   .fp-blog .fp-blog-wrap .blog-list li:last-child {
     margin-right: 0px;
   }
+  /* line 535, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+  }
+  /* line 546, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more {
+    display: block;
+    width: 130px;
+    margin: 4em auto 1em;
+    vertical-align: center;
+  }
+  /* line 552, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more a {
+    background-color: #000000;
+    color: #fffdf3;
+    padding: 1em 2em;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  /* line 558, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li .link-more a:hover {
+    color: #333333;
+    background-color: #f2f2f2;
+  }
 }
 @media (min-width: 1072px) {
-  /* line 507, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 586, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
   }
-  /* line 513, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 592, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li {
     width: 250px;
   }
-  /* line 526, sass/f-media-queries/_8mq-frontpage.scss */
+  /* line 605, sass/f-media-queries/_8mq-frontpage.scss */
   .prod-services-main .prod-services ul li .serv-text h3 {
     font-style: 22px;
     font-size: 1.375rem;
+  }
+
+  /* line 649, sass/f-media-queries/_8mq-frontpage.scss */
+  .fp-blog .fp-blog-wrap .blog-list li h3 {
+    height: 60px;
   }
 }
 @media (min-width: 320px) {

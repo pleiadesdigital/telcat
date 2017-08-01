@@ -11,7 +11,6 @@ $susy1: (
 	.content-area {
 		background-color: $snow;
 	}
-
 	// PROD/SERVICES MAIN
 	.prod-services-main {
 		background-color: darken($carbon, 10%);
@@ -29,6 +28,7 @@ $susy1: (
 				font-weight: $normal;
 				font-size: 30px;
 				font-size:1.875rem;
+				text-transform: uppercase;
 			}
 			p {
 				text-align: center;
@@ -145,10 +145,10 @@ $susy1: (
 		} //.fp-credibility-wrap
 	} //.fp-credibility
 
-	// NOTICIAS / ARTÍCULOS
+	// BLOG NOTICIAS / ARTÍCULOS
 	.fp-blog {
 		@include backImage($carbon, $proyectoimg);
-		padding: 3em 0px;
+		padding: 0px;
 		h2 {
 			text-align: center;
 			color: $cream;
@@ -191,7 +191,7 @@ $susy1: (
 						// position: absolute;
 						display: block;
 						width: 130px;
-						margin: 3em 0px 2em;
+						margin: 3em auto 2em;
 						vertical-align: center;
 						a {
 							background-color: $black;
@@ -242,18 +242,22 @@ $susy1: (
 			} //p
 			ul {
 				// display: flex;
+				padding-bottom: 0px;
 				li {
+					width: 80%;
 					height: 350px;
+					margin: 0px auto 2em;
 					// SERV ICON
 					.serv-icon {
-
+						padding-bottom: 0px;
 						img {
 
 						} //img
 					} //.serv-icon
 					// SERV TEXT
 					.serv-text {
-
+						margin-top: 5px;
+						padding-bottom: 20px;
 						h3 {
 
 							a {
@@ -270,7 +274,7 @@ $susy1: (
 							position: absolute;
 							margin-left: auto;
 							margin-right: auto;
-							bottom: 1em;
+							bottom: 0;
 							vertical-align: middle;
 							left: 0;
 							right: 0;
@@ -287,6 +291,61 @@ $susy1: (
 		} //.prod-services
 	} //.prod-services-main
 
+	// BLOG NOTICIAS / ARTÍCULOS
+	.fp-blog {
+		.fp-blog-wrap {
+			h2 {
+
+			}
+			.blog-list {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: flex-end;
+				li {
+					// flex-grow: 1;
+					// flex-basis: 0;
+					width: 45%;
+					margin-right: 1em;
+					&:last-child {
+						margin-right: 0px;
+					}
+					img {
+
+					} //img
+					h3 {
+				    font-size: 16px;
+				    font-size: 1rem;
+				    padding: 0px;
+				    margin: 0px;
+				    height: 80px;
+					} //h3
+					p {
+
+					} //p
+
+					.link-more {
+						// position: absolute;
+						display: block;
+						width: 130px;
+						margin: 4em auto 1em;
+						vertical-align: center;
+						a {
+							background-color: $black;
+							color: $cream;
+							padding: 1em 2em;
+							@include border-radius(4px);
+							@include single-transition(all, 0.2s, false, false);
+							&:hover {
+								color: $carbon;
+								background-color: $snow;
+							}
+						} //a
+					} //.link-more
+				} //li
+			} //.blog-list
+		} //.fp-blog-wrap
+	}//.fp-blog
 
 } //breakpoint($tablet) 30em 480px
 
@@ -365,7 +424,6 @@ $susy1: (
 
 	// PROD/SERVICES MAIN
 	.prod-services-main {
-
 		// PROD/SERVICES
 		.prod-services {
 
@@ -386,7 +444,7 @@ $susy1: (
 				flex-wrap: wrap;
 				li {
 					width: 350px;
-					height: 430px;
+					height: 400px;
 					margin-bottom: 2em;
 					// SERV ICON
 					.serv-icon {
@@ -397,7 +455,7 @@ $susy1: (
 					} //.serv-icon
 					// SERV TEXT
 					.serv-text {
-
+						margin: 20px 0px 0px;
 						h3 {
 							height: 60px;
 							a {
@@ -452,15 +510,13 @@ $susy1: (
 		} //.fp-credibility-wrap
 	} //.fp-credibility
 
-	// // NOTICIAS / ARTÍCULOS
+	// BLOG NOTICIAS / ARTÍCULOS
 	.fp-blog {
-
-		h2 {
-			font-size: 34px;
-			font-size: 2.125rem;
-		}
 		.fp-blog-wrap {
-
+			h2 {
+				font-size: 34px;
+				font-size: 2.125rem;
+			}
 			.blog-list {
 				display: flex;
 				flex-wrap: no-wrap;
@@ -477,11 +533,34 @@ $susy1: (
 
 					} //img
 					h3 {
-
+				    font-size: 16px;
+				    font-size: 1rem;
+				    padding: 0px;
+				    margin: 0px;
+				    height: 80px;
 					} //h3
 					p {
 
 					} //p
+
+					.link-more {
+						// position: absolute;
+						display: block;
+						width: 130px;
+						margin: 4em auto 1em;
+						vertical-align: center;
+						a {
+							background-color: $black;
+							color: $cream;
+							padding: 1em 2em;
+							@include border-radius(4px);
+							@include single-transition(all, 0.2s, false, false);
+							&:hover {
+								color: $carbon;
+								background-color: $snow;
+							}
+						} //a
+					} //.link-more
 				} //li
 			} //.blog-list
 		} //.fp-blog-wrap
@@ -550,6 +629,45 @@ $susy1: (
 			} //ul
 		} //.prod-services
 	} //.prod-services-main
+
+	// // NOTICIAS / ARTÍCULOS
+	.fp-blog {
+		.fp-blog-wrap {
+			h2 {
+
+			}
+			.blog-list { //ul
+
+				li {
+
+					&:last-child {
+
+					}
+					img {
+
+					} //img
+					h3 {
+				    height: 60px;
+					} //h3
+					p {
+
+					} //p
+
+					.link-more {
+
+						a {
+
+							&:hover {
+
+							}
+						} //a
+					} //.link-more
+				} //li
+			} //.blog-list
+		} //.fp-blog-wrap
+	}//.fp-blog
+
+
 } // breakpoint($desktop) 67em 1072px
 
 @include breakpoint($largedesk) { //79em 1264px
