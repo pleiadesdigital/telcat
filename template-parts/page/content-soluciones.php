@@ -4,7 +4,7 @@
 <!-- HEADER -->
 <div class="page-header">
   <div class="page-header-wrap">
-    <h1>Soluci&oacute;n: <?php echo the_title(); ?></h1>
+    <h1>Soluci&oacute;n: <span><?php echo the_title(); ?></span></h1>
   </div>
 </div><!-- class="page-header" -->
 
@@ -29,7 +29,7 @@
     <div class="cta-content">
       <h1><?php echo get_post_meta($post->ID, 'solucion-promo', true); ?></h1>
       <h2><?php echo get_post_meta($post->ID, 'solucion-promo2', true); ?></h2>
-      <button class="slider-btn">Contáctenos</button>
+      <button class="slider-btn"><a href="http://localhost/~ronyortiz/sites2017/telcatinnova/contacto/">Contáctenos</a></button>
     </div><!-- class="cta-content" -->
   </div><!-- .entry-content -->
 </section>

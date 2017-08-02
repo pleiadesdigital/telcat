@@ -27,9 +27,12 @@
 	        margin: 0px;
 	        padding: 0px;
 	        text-transform: uppercase;
-	        font-size: 40px;
-	        font-size: 2.5rem;
+	        font-size: 30px;
+	        font-size: 1.875rem;
 	        color: $carbon;
+	        span {
+	        	font-weight: $normal;
+	        }
 	      } //h1
 	    } //.page-header-wrapper
 	  } //.page-header (CANVAS HEADER)
@@ -176,10 +179,10 @@
 		// SOLUTIONS CONTENT
 	  .solution-content {
 	  	background-color: $white;
-	  	padding: 1	em 2em;
+	  	padding: 1em;
 			.solution-content-wrap {
 				@include container();
-				padding: 2em 1em 0px;
+				padding: 2em 0px 0px;
 				h2 {
 					text-align: center;
 					color: $white;
@@ -211,16 +214,16 @@
 					} //h3
 					p {
 						color: $carbon;
-						font-size: 22px;
-						font-size: 1.375rem;
+						font-size: 17px;
+						font-size: 1.0625rem;
 						font-weight: $light;
 					} //p
 					ul {
 						li {
 							margin-left: 1em;
 							color: $carbon;
-							font-size: 22px;
-							font-size: 1.375rem;
+							font-size: 17px;
+							font-size: 1.0625rem;
 							font-weight: $light;
 							list-style-type: square;
 							line-height: 2;
@@ -255,12 +258,12 @@
   		 	//CTA CONTENT
 	  		.cta-content {
 	  			background-color: rgba($black, 0.6);
-					padding: 2em 4em;
+					padding: 2em;
 					@include border-radius(6px);
 		  		h1 {
 						text-transform: uppercase;
-						font-size: 28	px;
-						font-size: 1.75rem;
+						font-size: 22px;
+						font-size: 1.375rem;
 						font-weight: $light;
 						text-align: center;
 						color: $cream;
@@ -306,7 +309,14 @@
 					  &:hover {
 					  	background: $black;
 					  	color: $cream;
+					  	a {
+					  		color: $cream;
+					  		box-shadow: none !important;
+					  	}
 					  } //&:hover
+					  a {
+					  	box-shadow: none !important;
+					  }
 					} //.slider-btn
 	  		} //cta-content
 
@@ -418,6 +428,17 @@
 	// CANVASFREE
 	.canvasfree {
 
+		// CANVAS HEADER
+		.page-header {
+
+		  .page-header-wrap {
+
+		    h1 {
+		    	/* font-size: 34px;
+		    	font-size: 2.125rem; */
+		    } //h1
+		  } //.page-header-wrapper
+		} //.page-header (CANVAS HEADER)
 	  /**** ABOUT PAGE *****/
 	  // ABOUT CONTENT
 	  .about-content {
@@ -458,16 +479,6 @@
 			} //.about-content-wrap
 	  } //.about-content
 
-	  // CANVAS HEADER
-	  .page-header {
-
-	    .page-header-wrap {
-
-	      h1 {
-
-	      } //h1
-	    } //.page-header-wrapper
-	  } //.page-header (CANVAS HEADER)
 	  // GOOGLE MAP
 	  .google-map {
 	    .google-map-wrap {
@@ -512,6 +523,85 @@
 	      } //.wpcf7-form
 	    } //.contact-content-wrap
 	  } //.contact-content
+
+		/**** SOLUCIONES *****/
+		// SOLUTIONS CONTENT
+	  .solution-content {
+	  	padding: 1em 1.5em;
+			.solution-content-wrap {
+
+				h2 {
+
+				}
+				// IMG SOLUTION
+				.solution-img {
+
+					img {
+
+					}
+				} //.solution-img
+				// TEXT CONTENT
+				.solution-text {
+
+					h3 {
+
+					} //h3
+					p {
+						font-size: 18px;
+						font-size: 1.125rem;
+					} //p
+					ul {
+						li {
+							font-size: 18px;
+							font-size: 1.125rem;
+						} //li
+					} //ul
+				} //.solution-text
+			} //.solution-content-wrap
+	  } //.solution-content
+	  // SOLUTIONS CTA
+	  .solution-cta {
+
+	  	&.comunicaciones-unificadas {
+
+	  	} //&.comunicaciones-unificadas
+	  	&.cloud-computing {
+
+	  	} //&.cloud-computing
+	  	&.infraestructura-fisica {
+
+	  	} //&.infraestructura-fisica
+	  	&.infraestructura-ti {
+
+	  	} //&.infraestructura-ti
+	  	.solution-cta-wrap {
+
+  		 	//CTA CONTENT
+	  		.cta-content {
+	  			padding: 2em 4em;
+		  		h1 {
+
+					} //h1
+					h2 {
+
+					} //h2
+					.slider-btn {
+
+					  &:hover {
+
+					  	a {
+
+					  	}
+					  } //&:hover
+					  a {
+
+					  }
+					} //.slider-btn
+	  		} //cta-content
+
+	  	} //.solution-cta-wrap
+	  } //.solution-cta
+
 	} //.canvasfree
 } //breakpoint($tablet) 30em 480px
 
@@ -553,52 +643,53 @@
 	    .page-header-wrap {
 
 	      h1 {
-
+	      	font-size: 34px;
+	      	font-size: 2.125rem;
 	      } //h1
 	    } //.page-header-wrapper
 	  } //.page-header (CANVAS HEADER)
 
-	    /**** ABOUT PAGE *****/
-	    // ABOUT CONTENT
-	    .about-content {
-	    	padding: 4em 2em;
-	  		.about-content-wrap {
+    /**** ABOUT PAGE *****/
+    // ABOUT CONTENT
+    .about-content {
+    	padding: 4em 2em;
+  		.about-content-wrap {
 
-	  			h2 {
-	  				font-size: 30px;
-	  				font-size: 1.875rem;
-	  			}
-	  			.about-img {
-	  				@include span(4);
-	  			} //.about-img
-	  			.about-text {
-	  				@include span(8 at 5);
-	  				padding-left: 2em;
-	  				h3 {
+  			h2 {
+  				font-size: 30px;
+  				font-size: 1.875rem;
+  			}
+  			.about-img {
+  				@include span(4);
+  			} //.about-img
+  			.about-text {
+  				@include span(8 at 5);
+  				padding-left: 2em;
+  				h3 {
 
-	  				}
-	  				p {
+  				}
+  				p {
 
-	  				} //p
-	  			} //.about-text
-	  		} //.about-content-wrap
-	    } //.about-content
-	    // ABOUT HISTORY
-	    .about-history {
+  				} //p
+  			} //.about-text
+  		} //.about-content-wrap
+    } //.about-content
+    // ABOUT HISTORY
+    .about-history {
 
-	  		.about-history-wrap {
+  		.about-history-wrap {
 
-	  			h2 {
+  			h2 {
 
-	  			} //h2
-	  			h3 {
+  			} //h2
+  			h3 {
 
-	  			} //h3
-	  			p {
+  			} //h3
+  			p {
 
-	  			}
-	  		} //.about-content-wrap
-	    } //.about-content
+  			}
+  		} //.about-content-wrap
+    } //.about-content
 
 	  // GOOGLE MAP
 	  .google-map {
@@ -644,6 +735,87 @@
 	      } //.wpcf7-form
 	    } //.contact-content-wrap
 	  } //.contact-content
+
+		/**** SOLUCIONES *****/
+		// SOLUTIONS CONTENT
+	  .solution-content {
+	  	padding: 1em 2em;
+			.solution-content-wrap {
+
+				h2 {
+
+				}
+				// IMG SOLUTION
+				.solution-img {
+
+					img {
+
+					}
+				} //.solution-img
+				// TEXT CONTENT
+				.solution-text {
+
+					h3 {
+
+					} //h3
+					p {
+						font-size: 22px;
+						font-size: 1.375rem;
+					} //p
+					ul {
+						li {
+							font-size: 22px;
+							font-size: 1.375rem;
+						} //li
+					} //ul
+				} //.solution-text
+			} //.solution-content-wrap
+	  } //.solution-content
+	  // SOLUTIONS CTA
+	  .solution-cta {
+
+	  	&.comunicaciones-unificadas {
+
+	  	} //&.comunicaciones-unificadas
+	  	&.cloud-computing {
+
+	  	} //&.cloud-computing
+	  	&.infraestructura-fisica {
+
+	  	} //&.infraestructura-fisica
+	  	&.infraestructura-ti {
+
+	  	} //&.infraestructura-ti
+	  	.solution-cta-wrap {
+
+  		 	//CTA CONTENT
+	  		.cta-content {
+
+		  		h1 {
+		  			font-size: 28	px;
+		  			font-size: 1.75rem;
+					} //h1
+					h2 {
+						font-size: 22px;
+						font-size: 1.375rem;
+					} //h2
+					.slider-btn {
+
+					  &:hover {
+
+					  	a {
+
+					  	}
+					  } //&:hover
+					  a {
+
+					  }
+					} //.slider-btn
+	  		} //cta-content
+
+	  	} //.solution-cta-wrap
+	  } //.solution-cta
+
 	} //.canvasfree
 
 
