@@ -59,7 +59,7 @@ if (!function_exists('pleiadesmoon_entry_footer')) {
 						echo '</span>';
 					}
 				}
-				pleiadesmoon_edit_link();
+				//pleiadesmoon_edit_link();
 			echo '</footer> <!-- .entry-footer -->';
 		}
 	}

@@ -11,6 +11,11 @@ $susy1: (
 	.content-area {
 		background-color: $snow;
 	}
+	.blog {
+		.content-area {
+			background-color: $white;
+		}
+	}
 	// PROD/SERVICES MAIN
 	.prod-services-main {
 		background-color: darken($carbon, 10%);
