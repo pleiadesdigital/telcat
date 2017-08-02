@@ -107,25 +107,24 @@
 	  .about-content {
 	  	@include backImage($bgcolor, $aboutimg);
 	  	// min-height: 500px;
-	  	padding: 4em 2em;
+	  	padding: 2em;
 			.about-content-wrap {
 				@include container();
 				padding: 2em 1em 0px;
 				h2 {
 					text-align: center;
 					color: $white;
-					font-size: 30px;
-					font-size: 1.875rem;
+					font-size: 24px;
+					font-size: 1.5rem;
 					margin-bottom: 2em;
 					font-style: italic;
 				}
 				.about-img {
-					@include span(4);
+					display: block;
 					// margin-right: 2em;
 				} //.about-img
 				.about-text {
-					@include span(8 at 5);
-					padding-left: 2em;
+					display: block;
 					h3 {
 						font-weight: $semibold;
 						font-size: 24px;
@@ -414,8 +413,51 @@
 
 @include breakpoint($tablet) { //30em 480px
 
+
+
 	// CANVASFREE
 	.canvasfree {
+
+	  /**** ABOUT PAGE *****/
+	  // ABOUT CONTENT
+	  .about-content {
+
+			.about-content-wrap {
+
+				h2 {
+
+				}
+				.about-img {
+
+				} //.about-img
+				.about-text {
+
+					h3 {
+
+					}
+					p {
+
+					} //p
+				} //.about-text
+			} //.about-content-wrap
+	  } //.about-content
+	  // ABOUT HISTORY
+	  .about-history {
+
+			.about-history-wrap {
+
+				h2 {
+
+				} //h2
+				h3 {
+
+				} //h3
+				p {
+
+				}
+			} //.about-content-wrap
+	  } //.about-content
+
 	  // CANVAS HEADER
 	  .page-header {
 
@@ -504,6 +546,7 @@
 
 	// CANVASFREE
 	.canvasfree {
+
 	  // CANVAS HEADER
 	  .page-header {
 
@@ -514,6 +557,49 @@
 	      } //h1
 	    } //.page-header-wrapper
 	  } //.page-header (CANVAS HEADER)
+
+	    /**** ABOUT PAGE *****/
+	    // ABOUT CONTENT
+	    .about-content {
+	    	padding: 4em 2em;
+	  		.about-content-wrap {
+
+	  			h2 {
+	  				font-size: 30px;
+	  				font-size: 1.875rem;
+	  			}
+	  			.about-img {
+	  				@include span(4);
+	  			} //.about-img
+	  			.about-text {
+	  				@include span(8 at 5);
+	  				padding-left: 2em;
+	  				h3 {
+
+	  				}
+	  				p {
+
+	  				} //p
+	  			} //.about-text
+	  		} //.about-content-wrap
+	    } //.about-content
+	    // ABOUT HISTORY
+	    .about-history {
+
+	  		.about-history-wrap {
+
+	  			h2 {
+
+	  			} //h2
+	  			h3 {
+
+	  			} //h3
+	  			p {
+
+	  			}
+	  		} //.about-content-wrap
+	    } //.about-content
+
 	  // GOOGLE MAP
 	  .google-map {
 	    .google-map-wrap {
@@ -565,6 +651,46 @@
 
 
 @include breakpoint($desktop) { //67em 1072px
+
+	  /**** ABOUT PAGE *****/
+	  // ABOUT CONTENT
+	  .about-content {
+
+			.about-content-wrap {
+
+				h2 {
+
+				}
+				.about-img {
+
+				} //.about-img
+				.about-text {
+
+					h3 {
+
+					}
+					p {
+
+					} //p
+				} //.about-text
+			} //.about-content-wrap
+	  } //.about-content
+	  // ABOUT HISTORY
+	  .about-history {
+
+			.about-history-wrap {
+
+				h2 {
+
+				} //h2
+				h3 {
+
+				} //h3
+				p {
+
+				}
+			} //.about-content-wrap
+	  } //.about-content
 
 	// CANVASFREE
 	.canvasfree {
