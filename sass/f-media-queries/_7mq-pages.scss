@@ -232,7 +232,6 @@
 				} //.solution-text
 			} //.solution-content-wrap
 	  } //.solution-content
-
 	  // SOLUTIONS CTA
 	  .solution-cta {
 	  	height: 500px;
@@ -329,19 +328,20 @@
 			.portfolio-content-wrap {
 				@include container();
 				.portfolio-text {
-					max-width: 650px;
+					max-width: 700px;
 					display: block;
 					margin: 2em auto 0px;
+					padding: 0px 1em;
 					p {
 						color: $carbon;
-						font-size: 22px;
-						font-size: 1.375rem;
+						font-size: 18px;
+						font-size: 1.125rem;
 						font-weight: $light;
+						text-align: center;
 					} //p
 				} //.portfolio-text
 			} //.portfolio-content-wrap
 		} //.portfolio-content
-
 		// PORTFOLIO CUBES
 		.portfolio-cubes {
 			background-color: $lightsilver;
@@ -602,6 +602,50 @@
 	  	} //.solution-cta-wrap
 	  } //.solution-cta
 
+    /**** PORTAFOLIO *****/
+    // CONTENT TEXT
+  	.portfolio-content {
+  		.portfolio-content-wrap {
+
+  			.portfolio-text {
+
+  				p {
+  					font-size: 19px;
+  					font-size: 1.1875rem;
+  				} //p
+  			} //.portfolio-text
+  		} //.portfolio-content-wrap
+  	} //.portfolio-content
+  	// PORTFOLIO CUBES
+  	.portfolio-cubes {
+
+  		.portfolio-cubes-wrap {
+
+  			.cubes { //ul
+
+  				li {
+
+  					h2 {
+
+  					} //h2
+  					h6 {
+
+  					} //h6
+  					p {
+
+  					} //p
+  					ul {
+
+  						li {
+
+  						} //li
+  					} //ul
+  				} //li
+  			} //.cubes
+  		} //.portfolio-cubes-wrap
+  	} //.portfolio-cubes
+
+
 	} //.canvasfree
 } //breakpoint($tablet) 30em 480px
 
@@ -815,6 +859,51 @@
 
 	  	} //.solution-cta-wrap
 	  } //.solution-cta
+
+	    /**** PORTAFOLIO *****/
+	    // CONTENT TEXT
+	  	.portfolio-content {
+	  		.portfolio-content-wrap {
+
+	  			.portfolio-text {
+
+	  				p {
+	  					font-size: 22px;
+	  					font-size: 1.375rem;
+	  					text-align: left;
+	  				} //p
+	  			} //.portfolio-text
+	  		} //.portfolio-content-wrap
+	  	} //.portfolio-content
+	  	// PORTFOLIO CUBES
+	  	.portfolio-cubes {
+
+	  		.portfolio-cubes-wrap {
+
+	  			.cubes { //ul
+
+	  				li {
+
+	  					h2 {
+
+	  					} //h2
+	  					h6 {
+
+	  					} //h6
+	  					p {
+
+	  					} //p
+	  					ul {
+
+	  						li {
+
+	  						} //li
+	  					} //ul
+	  				} //li
+	  			} //.cubes
+	  		} //.portfolio-cubes-wrap
+	  	} //.portfolio-cubes
+
 
 	} //.canvasfree
 

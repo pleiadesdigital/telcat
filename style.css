@@ -4596,12 +4596,12 @@ F. Media Queries
     list-style-type: square;
     line-height: 2;
   }
-  /* line 237, sass/f-media-queries/_7mq-pages.scss */
+  /* line 236, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta {
     height: 500px;
     width: 100%;
   }
-  /* line 240, sass/f-media-queries/_7mq-pages.scss */
+  /* line 239, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.comunicaciones-unificadas {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/comunications-unificadas.jpg");
@@ -4613,7 +4613,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 243, sass/f-media-queries/_7mq-pages.scss */
+  /* line 242, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.cloud-computing {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/cloud-computing.jpg");
@@ -4625,7 +4625,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 246, sass/f-media-queries/_7mq-pages.scss */
+  /* line 245, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.infraestructura-fisica {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/PS-infraestructure.jpg");
@@ -4637,7 +4637,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 249, sass/f-media-queries/_7mq-pages.scss */
+  /* line 248, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.infraestructura-ti {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/infraestructura-ti.jpg");
@@ -4649,7 +4649,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 252, sass/f-media-queries/_7mq-pages.scss */
+  /* line 251, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4665,7 +4665,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 259, sass/f-media-queries/_7mq-pages.scss */
+  /* line 258, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2em;
@@ -4673,7 +4673,7 @@ F. Media Queries
     -webkit-border-radius: 6px;
     border-radius: 6px;
   }
-  /* line 263, sass/f-media-queries/_7mq-pages.scss */
+  /* line 262, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h1 {
     text-transform: uppercase;
     font-size: 22px;
@@ -4684,7 +4684,7 @@ F. Media Queries
     text-shadow: 0px 0px 1px #999999;
     text-shadow: 0px 0px 1px true #999999;
   }
-  /* line 272, sass/f-media-queries/_7mq-pages.scss */
+  /* line 271, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h2 {
     padding: 0px;
     color: #fffdf3;
@@ -4694,7 +4694,7 @@ F. Media Queries
     font-variant: small-caps;
     text-align: center;
   }
-  /* line 281, sass/f-media-queries/_7mq-pages.scss */
+  /* line 280, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn {
     display: block;
     padding: 5px 10px;
@@ -4730,21 +4730,21 @@ F. Media Queries
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
-  /* line 309, sass/f-media-queries/_7mq-pages.scss */
+  /* line 308, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn:hover {
     background: #000000;
     color: #fffdf3;
   }
-  /* line 312, sass/f-media-queries/_7mq-pages.scss */
+  /* line 311, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn:hover a {
     color: #fffdf3;
     box-shadow: none !important;
   }
-  /* line 317, sass/f-media-queries/_7mq-pages.scss */
+  /* line 316, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn a {
     box-shadow: none !important;
   }
-  /* line 329, sass/f-media-queries/_7mq-pages.scss */
+  /* line 328, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4756,18 +4756,20 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 331, sass/f-media-queries/_7mq-pages.scss */
+  /* line 330, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text {
-    max-width: 650px;
+    max-width: 700px;
     display: block;
     margin: 2em auto 0px;
+    padding: 0px 1em;
   }
   /* line 335, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     color: #333333;
-    font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
+    text-align: center;
   }
   /* line 346, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes {
@@ -4863,6 +4865,7 @@ F. Media Queries
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
+    /**** PORTAFOLIO *****/
   }
   /* line 436, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
@@ -4892,29 +4895,34 @@ F. Media Queries
   .canvasfree .solution-cta .solution-cta-wrap .cta-content {
     padding: 2em 4em;
   }
+  /* line 612, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
 }
 @media (min-width: 768px) {
   /* ORIGINAL STYLES Pages */
-  /* line 612, sass/f-media-queries/_7mq-pages.scss */
+  /* line 656, sass/f-media-queries/_7mq-pages.scss */
   .page.page-one-column .entry-header,
   .pleiadesmoon-front-page.page-one-column .entry-header,
   .archive.page-one-column:not(.has-sidebar) .page-header {
     margin-bottom: 4em;
   }
 
-  /* line 617, sass/f-media-queries/_7mq-pages.scss */
+  /* line 661, sass/f-media-queries/_7mq-pages.scss */
   .page:not(.home) #content {
     padding-bottom: 3.25em;
   }
 
   /* 404 page */
-  /* line 621, sass/f-media-queries/_7mq-pages.scss */
+  /* line 665, sass/f-media-queries/_7mq-pages.scss */
   .error404 .page-content {
     padding-bottom: 9em;
   }
 
   /* Secondary */
-  /* line 625, sass/f-media-queries/_7mq-pages.scss */
+  /* line 669, sass/f-media-queries/_7mq-pages.scss */
   #secondary {
     font-size: 14px;
     font-size: 0.875rem;
@@ -4922,73 +4930,80 @@ F. Media Queries
   }
 
   /* Widgets */
-  /* line 631, sass/f-media-queries/_7mq-pages.scss */
+  /* line 675, sass/f-media-queries/_7mq-pages.scss */
   h2.widget-title {
     font-size: 11px;
     font-size: 0.6875rem;
     margin-bottom: 2em;
   }
 
-  /* line 638, sass/f-media-queries/_7mq-pages.scss */
+  /* line 682, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
+    /**** PORTAFOLIO *****/
   }
-  /* line 645, sass/f-media-queries/_7mq-pages.scss */
+  /* line 689, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 654, sass/f-media-queries/_7mq-pages.scss */
+  /* line 698, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content {
     padding: 4em 2em;
   }
-  /* line 658, sass/f-media-queries/_7mq-pages.scss */
+  /* line 702, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap h2 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  /* line 662, sass/f-media-queries/_7mq-pages.scss */
+  /* line 706, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-img {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 665, sass/f-media-queries/_7mq-pages.scss */
+  /* line 709, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text {
     width: 66.10169%;
     float: right;
     margin-right: 0;
     padding-left: 2em;
   }
-  /* line 717, sass/f-media-queries/_7mq-pages.scss */
+  /* line 761, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap h2 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 741, sass/f-media-queries/_7mq-pages.scss */
+  /* line 785, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     padding: 1em 2em;
   }
-  /* line 761, sass/f-media-queries/_7mq-pages.scss */
+  /* line 805, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 766, sass/f-media-queries/_7mq-pages.scss */
+  /* line 810, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 794, sass/f-media-queries/_7mq-pages.scss */
+  /* line 838, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h1 {
     font-size: 28	px;
     font-size: 1.75rem;
   }
-  /* line 798, sass/f-media-queries/_7mq-pages.scss */
+  /* line 842, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h2 {
     font-size: 22px;
     font-size: 1.375rem;
+  }
+  /* line 870, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
+    font-size: 22px;
+    font-size: 1.375rem;
+    text-align: left;
   }
 }
 @media (min-width: 1072px) {
