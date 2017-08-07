@@ -4315,6 +4315,7 @@ F. Media Queries
     /***** CONTACT PAGE *****/
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
+    /**** CATÁLOGO *****/
     /**** PORTAFOLIO *****/
   }
   /* line 19, sass/f-media-queries/_7mq-pages.scss */
@@ -4401,21 +4402,38 @@ F. Media Queries
   }
   /* line 82, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form {
+    padding-right: 0px;
     display: block;
-    max-width: 600px;
+    width: 85%;
     margin: 0px auto;
   }
-  /* line 87, sass/f-media-queries/_7mq-pages.scss */
+  /* line 89, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form input::placeholder,
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form textarea::placeholder {
     color: #b3b3b3;
     font-weight: 300;
   }
-  /* line 93, sass/f-media-queries/_7mq-pages.scss */
+  /* line 94, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .contact-content .contact-content-wrap .wpcf7-form input {
+    margin: 0px;
+    width: 100%;
+  }
+  /* line 98, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .contact-content .contact-content-wrap .wpcf7-form textarea {
+    margin: 0px auto;
+    width: 100% !important;
+    height: 10px !important;
+  }
+  /* line 104, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form input[type=submit] {
     background-color: #000000;
     color: #fffdf3;
     padding: 1em 2em;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -4424,12 +4442,12 @@ F. Media Queries
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  /* line 99, sass/f-media-queries/_7mq-pages.scss */
+  /* line 115, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form input[type=submit]:hover {
     color: #333333;
     background-color: #f2f2f2;
   }
-  /* line 110, sass/f-media-queries/_7mq-pages.scss */
+  /* line 129, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/about-cover-img.jpg");
@@ -4442,7 +4460,7 @@ F. Media Queries
     background-size: cover;
     padding: 2em;
   }
-  /* line 114, sass/f-media-queries/_7mq-pages.scss */
+  /* line 133, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4455,7 +4473,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 117, sass/f-media-queries/_7mq-pages.scss */
+  /* line 136, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap h2 {
     text-align: center;
     color: #FFFFFF;
@@ -4464,31 +4482,31 @@ F. Media Queries
     margin-bottom: 2em;
     font-style: italic;
   }
-  /* line 125, sass/f-media-queries/_7mq-pages.scss */
+  /* line 144, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-img {
     display: block;
   }
-  /* line 129, sass/f-media-queries/_7mq-pages.scss */
+  /* line 148, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text {
     display: block;
   }
-  /* line 131, sass/f-media-queries/_7mq-pages.scss */
+  /* line 150, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text h3 {
     font-weight: 500;
     font-size: 24px;
     font-size: 1.5rem;
     color: #fac20a;
   }
-  /* line 137, sass/f-media-queries/_7mq-pages.scss */
+  /* line 156, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text p {
     color: #fffdf3;
   }
-  /* line 144, sass/f-media-queries/_7mq-pages.scss */
+  /* line 163, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-history {
     background-color: #FFFFFF;
     padding: 2em 1em 0px;
   }
-  /* line 147, sass/f-media-queries/_7mq-pages.scss */
+  /* line 166, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-history .about-history-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4501,7 +4519,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 150, sass/f-media-queries/_7mq-pages.scss */
+  /* line 169, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-history .about-history-wrap h2 {
     text-align: center;
     color: #22446c;
@@ -4510,7 +4528,7 @@ F. Media Queries
     text-transform: uppercase;
     font-weight: 400;
   }
-  /* line 158, sass/f-media-queries/_7mq-pages.scss */
+  /* line 177, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-history .about-history-wrap h3 {
     text-align: center;
     margin: 0px;
@@ -4519,7 +4537,7 @@ F. Media Queries
     text-transform: uppercase;
     font-weight: 400;
   }
-  /* line 166, sass/f-media-queries/_7mq-pages.scss */
+  /* line 185, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-history .about-history-wrap p {
     max-width: 700px;
     font-weight: 300;
@@ -4529,12 +4547,12 @@ F. Media Queries
     line-height: 1.8;
     margin: 0px auto 1em;
   }
-  /* line 180, sass/f-media-queries/_7mq-pages.scss */
+  /* line 199, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     background-color: #FFFFFF;
     padding: 1em;
   }
-  /* line 183, sass/f-media-queries/_7mq-pages.scss */
+  /* line 202, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4547,7 +4565,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 186, sass/f-media-queries/_7mq-pages.scss */
+  /* line 205, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap h2 {
     text-align: center;
     color: #FFFFFF;
@@ -4556,37 +4574,37 @@ F. Media Queries
     margin-bottom: 2em;
     font-style: italic;
   }
-  /* line 195, sass/f-media-queries/_7mq-pages.scss */
+  /* line 214, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-img {
     display: block;
     width: 100%;
   }
-  /* line 198, sass/f-media-queries/_7mq-pages.scss */
+  /* line 217, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-img img {
     display: block;
     margin: 0px auto;
   }
-  /* line 205, sass/f-media-queries/_7mq-pages.scss */
+  /* line 224, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text {
     max-width: 650px;
     display: block;
     margin: 2em auto 0px;
   }
-  /* line 209, sass/f-media-queries/_7mq-pages.scss */
+  /* line 228, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text h3 {
     font-weight: 500;
     font-size: 24px;
     font-size: 1.5rem;
     color: #fac20a;
   }
-  /* line 215, sass/f-media-queries/_7mq-pages.scss */
+  /* line 234, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     color: #333333;
     font-size: 17px;
     font-size: 1.0625rem;
     font-weight: 300;
   }
-  /* line 222, sass/f-media-queries/_7mq-pages.scss */
+  /* line 241, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     margin-left: 1em;
     color: #333333;
@@ -4596,12 +4614,12 @@ F. Media Queries
     list-style-type: square;
     line-height: 2;
   }
-  /* line 236, sass/f-media-queries/_7mq-pages.scss */
+  /* line 255, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta {
     height: 500px;
     width: 100%;
   }
-  /* line 239, sass/f-media-queries/_7mq-pages.scss */
+  /* line 258, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.comunicaciones-unificadas {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/comunications-unificadas.jpg");
@@ -4613,7 +4631,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 242, sass/f-media-queries/_7mq-pages.scss */
+  /* line 261, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.cloud-computing {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/cloud-computing.jpg");
@@ -4625,7 +4643,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 245, sass/f-media-queries/_7mq-pages.scss */
+  /* line 264, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.infraestructura-fisica {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/PS-infraestructure.jpg");
@@ -4637,7 +4655,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 248, sass/f-media-queries/_7mq-pages.scss */
+  /* line 267, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta.infraestructura-ti {
     background-color: #0a1420;
     background-image: url("http://telcatinnova.com/wp-content/themes/pleiadesmoon/assets/images/soluciones/infraestructura-ti.jpg");
@@ -4649,7 +4667,7 @@ F. Media Queries
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 251, sass/f-media-queries/_7mq-pages.scss */
+  /* line 270, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4665,7 +4683,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 258, sass/f-media-queries/_7mq-pages.scss */
+  /* line 277, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2em;
@@ -4673,7 +4691,7 @@ F. Media Queries
     -webkit-border-radius: 6px;
     border-radius: 6px;
   }
-  /* line 262, sass/f-media-queries/_7mq-pages.scss */
+  /* line 281, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h1 {
     text-transform: uppercase;
     font-size: 22px;
@@ -4684,7 +4702,7 @@ F. Media Queries
     text-shadow: 0px 0px 1px #999999;
     text-shadow: 0px 0px 1px true #999999;
   }
-  /* line 271, sass/f-media-queries/_7mq-pages.scss */
+  /* line 290, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h2 {
     padding: 0px;
     color: #fffdf3;
@@ -4694,7 +4712,7 @@ F. Media Queries
     font-variant: small-caps;
     text-align: center;
   }
-  /* line 280, sass/f-media-queries/_7mq-pages.scss */
+  /* line 299, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn {
     display: block;
     padding: 5px 10px;
@@ -4730,21 +4748,149 @@ F. Media Queries
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
-  /* line 308, sass/f-media-queries/_7mq-pages.scss */
+  /* line 327, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn:hover {
     background: #000000;
     color: #fffdf3;
   }
-  /* line 311, sass/f-media-queries/_7mq-pages.scss */
+  /* line 330, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn:hover a {
     color: #fffdf3;
     box-shadow: none !important;
   }
-  /* line 316, sass/f-media-queries/_7mq-pages.scss */
+  /* line 335, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content .slider-btn a {
     box-shadow: none !important;
   }
-  /* line 328, sass/f-media-queries/_7mq-pages.scss */
+  /* line 345, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content {
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+  /* line 349, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    overflow: none;
+  }
+  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 355, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-sidebar {
+    margin-bottom: 0.5em;
+  }
+  /* line 358, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-sidebar .prod-cat-price-filter #upcp-price-range {
+    display: block;
+    margin: 0.5em 0px 1.5em;
+  }
+  /* line 362, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-sidebar .prod-cat-price-filter .ui-widget-header {
+    background-color: #fac20a;
+  }
+  /* line 366, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-sidebar .prod-cat-sidebar-cat-title {
+    padding: 0px;
+    margin-top: 2em;
+  }
+  /* line 369, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-sidebar .prod-cat-sidebar-cat-title h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  /* line 378, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner a {
+    box-shadow: none !important;
+    color: #22446c !important;
+  }
+  /* line 381, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner a:hover, .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner a:focus {
+    color: #366cac !important;
+  }
+  /* line 387, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .prod-cat-price {
+    color: #cd9e04;
+  }
+  /* line 393, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link {
+    background: none !important;
+    text-align: right;
+  }
+  /* line 396, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-text {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  /* line 399, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-text:hover, .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-text:focus {
+    color: #22446c;
+  }
+  /* line 403, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-text:after {
+    content: " >>";
+  }
+  /* line 407, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-icon {
+    display: none !important;
+  }
+  /* line 421, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div {
+    margin: 2em 0px;
+  }
+  /* line 423, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-thumb-toggle-icon {
+    display: none;
+  }
+  /* line 426, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-details-toggle-icon {
+    display: none;
+  }
+  /* line 429, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-list-toggle-icon {
+    display: none;
+  }
+  /* line 434, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-image-div {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+  }
+  /* line 438, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-image-div img {
+    display: block;
+    max-width: 80% !important;
+  }
+  /* line 444, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-desc-div {
+    margin-top: 1em;
+  }
+  /* line 448, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-thumbs-div a {
+    box-shadow: none !important;
+  }
+  /* line 452, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-price {
+    color: #e6b105;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+  }
+  /* line 457, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-toggle-icon {
+    display: none !important;
+  }
+  /* line 467, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4756,14 +4902,14 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 330, sass/f-media-queries/_7mq-pages.scss */
+  /* line 469, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text {
     max-width: 700px;
     display: block;
     margin: 2em auto 0px;
     padding: 0px 1em;
   }
-  /* line 335, sass/f-media-queries/_7mq-pages.scss */
+  /* line 474, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     color: #333333;
     font-size: 18px;
@@ -4771,12 +4917,12 @@ F. Media Queries
     font-weight: 300;
     text-align: center;
   }
-  /* line 346, sass/f-media-queries/_7mq-pages.scss */
+  /* line 485, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes {
     background-color: #e6e6e6;
     min-height: 500px;
   }
-  /* line 349, sass/f-media-queries/_7mq-pages.scss */
+  /* line 488, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -4788,7 +4934,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 351, sass/f-media-queries/_7mq-pages.scss */
+  /* line 490, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes {
     margin: 0px;
     padding: 0px;
@@ -4800,7 +4946,7 @@ F. Media Queries
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* line 361, sass/f-media-queries/_7mq-pages.scss */
+  /* line 500, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li {
     margin: 0px 0.5em 2em;
     padding: 1em 1.5em;
@@ -4808,7 +4954,7 @@ F. Media Queries
     width: 300px;
     position: relative;
   }
-  /* line 368, sass/f-media-queries/_7mq-pages.scss */
+  /* line 507, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li h2 {
     font-size: 16px;
     font-size: 1rem;
@@ -4820,7 +4966,7 @@ F. Media Queries
     padding-top: 0px;
     margin-bottom: 1em;
   }
-  /* line 379, sass/f-media-queries/_7mq-pages.scss */
+  /* line 518, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li h6 {
     color: #b3b3b3;
     text-transform: uppercase;
@@ -4834,19 +4980,19 @@ F. Media Queries
     bottom: 1em;
     font-family: "Oxygen", sans-serif;
   }
-  /* line 392, sass/f-media-queries/_7mq-pages.scss */
+  /* line 531, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li p {
     font-weight: 300;
     font-size: 13px;
     font-size: 0.8125rem;
     margin-bottom: 5px;
   }
-  /* line 398, sass/f-media-queries/_7mq-pages.scss */
+  /* line 537, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul {
     margin: 0px 0px 0px 1em;
     list-style: square;
   }
-  /* line 401, sass/f-media-queries/_7mq-pages.scss */
+  /* line 540, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul li {
     font-weight: 300;
     font-size: 13px;
@@ -4861,41 +5007,61 @@ F. Media Queries
   }
 }
 @media (min-width: 480px) {
-  /* line 429, sass/f-media-queries/_7mq-pages.scss */
+  /* line 568, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
+    /**** CATÁLOGO *****/
     /**** PORTAFOLIO *****/
   }
-  /* line 436, sass/f-media-queries/_7mq-pages.scss */
+  /* line 575, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
     /* font-size: 34px;
     font-size: 2.125rem; */
   }
-  /* line 505, sass/f-media-queries/_7mq-pages.scss */
+  /* line 644, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap h2 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  /* line 529, sass/f-media-queries/_7mq-pages.scss */
+  /* line 668, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     padding: 1em 1.5em;
   }
-  /* line 549, sass/f-media-queries/_7mq-pages.scss */
+  /* line 688, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 554, sass/f-media-queries/_7mq-pages.scss */
+  /* line 693, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 580, sass/f-media-queries/_7mq-pages.scss */
+  /* line 719, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content {
     padding: 2em 4em;
   }
-  /* line 612, sass/f-media-queries/_7mq-pages.scss */
+  /* line 745, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content {
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+  /* line 749, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    overflow: none;
+  }
+  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 763, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -4903,26 +5069,26 @@ F. Media Queries
 }
 @media (min-width: 768px) {
   /* ORIGINAL STYLES Pages */
-  /* line 656, sass/f-media-queries/_7mq-pages.scss */
+  /* line 807, sass/f-media-queries/_7mq-pages.scss */
   .page.page-one-column .entry-header,
   .pleiadesmoon-front-page.page-one-column .entry-header,
   .archive.page-one-column:not(.has-sidebar) .page-header {
     margin-bottom: 4em;
   }
 
-  /* line 661, sass/f-media-queries/_7mq-pages.scss */
+  /* line 812, sass/f-media-queries/_7mq-pages.scss */
   .page:not(.home) #content {
     padding-bottom: 3.25em;
   }
 
   /* 404 page */
-  /* line 665, sass/f-media-queries/_7mq-pages.scss */
+  /* line 816, sass/f-media-queries/_7mq-pages.scss */
   .error404 .page-content {
     padding-bottom: 9em;
   }
 
   /* Secondary */
-  /* line 669, sass/f-media-queries/_7mq-pages.scss */
+  /* line 820, sass/f-media-queries/_7mq-pages.scss */
   #secondary {
     font-size: 14px;
     font-size: 0.875rem;
@@ -4930,76 +5096,95 @@ F. Media Queries
   }
 
   /* Widgets */
-  /* line 675, sass/f-media-queries/_7mq-pages.scss */
+  /* line 826, sass/f-media-queries/_7mq-pages.scss */
   h2.widget-title {
     font-size: 11px;
     font-size: 0.6875rem;
     margin-bottom: 2em;
   }
 
-  /* line 682, sass/f-media-queries/_7mq-pages.scss */
+  /* line 833, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
+    /**** CATÁLOGO *****/
     /**** PORTAFOLIO *****/
   }
-  /* line 689, sass/f-media-queries/_7mq-pages.scss */
+  /* line 840, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 698, sass/f-media-queries/_7mq-pages.scss */
+  /* line 849, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content {
     padding: 4em 2em;
   }
-  /* line 702, sass/f-media-queries/_7mq-pages.scss */
+  /* line 853, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap h2 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  /* line 706, sass/f-media-queries/_7mq-pages.scss */
+  /* line 857, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-img {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 709, sass/f-media-queries/_7mq-pages.scss */
+  /* line 860, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text {
     width: 66.10169%;
     float: right;
     margin-right: 0;
     padding-left: 2em;
   }
-  /* line 761, sass/f-media-queries/_7mq-pages.scss */
+  /* line 912, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap h2 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 785, sass/f-media-queries/_7mq-pages.scss */
+  /* line 916, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .contact-content .contact-content-wrap .wpcf7-form {
+    display: block;
+    max-width: 600px;
+    margin: 0px auto;
+  }
+  /* line 926, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .contact-content .contact-content-wrap .wpcf7-form input[type=submit] {
+    width: 120px;
+  }
+  /* line 938, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     padding: 1em 2em;
   }
-  /* line 805, sass/f-media-queries/_7mq-pages.scss */
+  /* line 958, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 810, sass/f-media-queries/_7mq-pages.scss */
+  /* line 963, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 838, sass/f-media-queries/_7mq-pages.scss */
+  /* line 991, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h1 {
     font-size: 28	px;
     font-size: 1.75rem;
   }
-  /* line 842, sass/f-media-queries/_7mq-pages.scss */
+  /* line 995, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h2 {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 870, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1023, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-thumb-toggle-icon {
+    display: block;
+  }
+  /* line 1026, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-details-toggle-icon {
+    display: block;
+  }
+  /* line 1045, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     font-size: 22px;
     font-size: 1.375rem;
@@ -5008,6 +5193,10 @@ F. Media Queries
 }
 @media (min-width: 1072px) {
   /**** ABOUT PAGE *****/
+  /* line 1132, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree {
+    /**** CATÁLOGO *****/
+  }
 }
 @media (min-width: 320px) {
   /* line 11, sass/f-media-queries/_8mq-frontpage.scss */

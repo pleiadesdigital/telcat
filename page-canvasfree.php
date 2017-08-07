@@ -8,6 +8,8 @@
     $content_part = 'about';
   } elseif (is_page('soluciones') || $post->post_parent==34) {
     $content_part = 'soluciones';
+  } elseif (is_page('catalogo')) {
+    $content_part = 'catalogo';
   } elseif (is_page('portafolio')) {
     $content_part = 'portfolio';
   } else {

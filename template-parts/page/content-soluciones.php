@@ -29,7 +29,7 @@
     <div class="cta-content">
       <h1><?php echo get_post_meta($post->ID, 'solucion-promo', true); ?></h1>
       <h2><?php echo get_post_meta($post->ID, 'solucion-promo2', true); ?></h2>
-      <button class="slider-btn"><a href="http://localhost/~ronyortiz/sites2017/telcatinnova/contacto/">Contáctenos</a></button>
+      <button class="slider-btn"><a href="http://telcatinnova.com/contacto/">Contáctenos</a></button>
     </div><!-- class="cta-content" -->
   </div><!-- .entry-content -->
 </section>
