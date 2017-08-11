@@ -4,19 +4,47 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"margin-left"
+				"c",
+				"disc"
 			],
 			[
-				"text",
-				"text-transform"
-			],
-			[
-				"pa",
-				"padding-bottom"
+				"marg",
+				"margin-bottom"
 			],
 			[
 				"padd",
+				"padding"
+			],
+			[
+				"border-bottom",
+				"border-bottom-width"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
 				"padding-bottom"
 			],
 			[
@@ -24,24 +52,12 @@
 				"list-style"
 			],
 			[
-				"font-",
-				"font-family"
-			],
-			[
 				"font",
 				"font-weight"
 			],
 			[
-				"marg",
-				"margin-bottom"
-			],
-			[
 				"paddi",
 				"padding"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"list-st",
@@ -163,15 +179,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "template-parts/page/content-about.php",
-			"settings":
-			{
-				"buffer_size": 1359,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -227,23 +234,29 @@
 	],
 	"file_history":
 	[
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_8mq-frontpage.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_7mq-pages.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-portfolio.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/page-canvasfree.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-partners.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-catalogo.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/h-variables/_colors.scss",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/style.css",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-soluciones.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/functions.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/c-elements/_typography.scss",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/single.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/post/content.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/inc/template-tags.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-about.php",
+		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_8mq-frontpage.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/h-variables/_fonts.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/front-page.php",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/functions.php",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_6mq-blog.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/home.php",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/post/content.php",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/single.php",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/b-layout/_posts.scss",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/page-canvasfree.php",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-soluciones.php",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/h-variables/_mixins.scss",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Espresso.tmTheme",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_2mq-header.scss",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/template-parts/page/content-about.php",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/header.php",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Dawn.tmTheme",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Argonaut.tmTheme",
@@ -259,7 +272,6 @@
 		"/Users/ronyortiz/Desktop/front-page.php",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/f-media-queries/_4mq-navigation.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/b-layout/_footer.scss",
-		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/h-variables/_colors.scss",
 		"/Users/ronyortiz/Sites/sites2017/telcatinnova/wp-content/themes/pleiadesmoon/sass/e-misc-markup/_widgets.scss",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Mono Industrial.tmTheme",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/iLife 05.tmTheme",
@@ -273,7 +285,7 @@
 	],
 	"find":
 	{
-		"height": 58.0
+		"height": 49.0
 	},
 	"find_in_files":
 	{
@@ -288,6 +300,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"clip",
+			"pleiadesmoon_entry_footer",
 			"Inter",
 			"localhost",
 			"\t\t\t\t\n",
@@ -295,7 +309,7 @@
 			"a",
 			">\n"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -316,117 +330,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "template-parts/page/content-about.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								888,
-								888
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "php",
-							"buffer_scroll_name": "733b0c3e",
-							"spell_check": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -458,7 +363,7 @@
 		"cols":
 		[
 			0.0,
-			0.609145984753,
+			0.58664208528,
 			1.0
 		],
 		"rows":
@@ -506,7 +411,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

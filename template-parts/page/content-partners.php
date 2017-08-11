@@ -24,7 +24,7 @@
   <?php
     $args = array(
       'post_type'       => 'post',
-      'cat'             => 7,
+      'cat'             => 8,
       'order'         => 'asc'
     );
     $query = new WP_Query($args);

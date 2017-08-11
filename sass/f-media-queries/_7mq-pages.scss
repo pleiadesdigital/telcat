@@ -409,13 +409,9 @@
 							}
 						} //.upcp-thumb-details-link
 
-
 					} //.upcp-catalogue-link
 
-
 				} //.prod-cat-inner
-
-
 
 				// Adjusments
  				.prod-cat-header-div {
@@ -457,6 +453,10 @@
 				.upcp-thumb-toggle-icon {
 					display: none !important;
 				} //.upcp-thumb-toggle-icon
+
+				.Grey-prod-cat-header-div {
+					border-bottom-width: 1px !important;
+				}
 
 			} //.catalog-content-wrap
 	  } //.catalogo-content
@@ -508,13 +508,20 @@
 							font-size: 16px;
 							font-size: 1rem;
 							text-transform: uppercase;
-							height: 40px;
 							overflow: hidden;
 							text-align: center;
 							margin-top: 0px;
 							padding-top: 0px;
 							margin-bottom: 1em;
 						} //h2
+						img {
+							display: block;
+							width: auto;
+							min-height: 110px;
+							max-height: 130px;
+							margin: 0px auto 1em;
+							text-align: center;
+						}
 						h6 {
 							color: $darksilver;
 							text-transform: uppercase;
@@ -545,9 +552,19 @@
 								list-style: square;
 								width: 100%;
 								margin: 0px;
-								padding-right: 0px;
-								padding-top: 0.5em;
-								padding-bottom: 0.5em;
+								padding: 0px;
+								margin-bottom: 0.5em;
+								ul li {
+									list-style: disc;
+									padding: 0px;
+									margin-top: 0px;
+									margin-bottom: 3px;
+									ul li {
+										list-style: circle;
+										padding: 0px;
+										margin-bottom: 3px;
+									}
+								}
 							} //li
 						} //ul
 					} //li

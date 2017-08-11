@@ -4845,50 +4845,54 @@ F. Media Queries
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-inner .upcp-catalogue-link .upcp-thumb-details-link .upcp-details-icon {
     display: none !important;
   }
-  /* line 421, sass/f-media-queries/_7mq-pages.scss */
+  /* line 417, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div {
     margin: 2em 0px;
   }
-  /* line 423, sass/f-media-queries/_7mq-pages.scss */
+  /* line 419, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-thumb-toggle-icon {
     display: none;
   }
-  /* line 426, sass/f-media-queries/_7mq-pages.scss */
+  /* line 422, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-details-toggle-icon {
     display: none;
   }
-  /* line 429, sass/f-media-queries/_7mq-pages.scss */
+  /* line 425, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-list-toggle-icon {
     display: none;
   }
-  /* line 434, sass/f-media-queries/_7mq-pages.scss */
+  /* line 430, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-image-div {
     display: block;
     margin: 0px auto;
     text-align: center;
   }
-  /* line 438, sass/f-media-queries/_7mq-pages.scss */
+  /* line 434, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-image-div img {
     display: block;
     max-width: 80% !important;
   }
-  /* line 444, sass/f-media-queries/_7mq-pages.scss */
+  /* line 440, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-desc-div {
     margin-top: 1em;
   }
-  /* line 448, sass/f-media-queries/_7mq-pages.scss */
+  /* line 444, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-thumbs-div a {
     box-shadow: none !important;
   }
-  /* line 452, sass/f-media-queries/_7mq-pages.scss */
+  /* line 448, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-addt-details-price {
     color: #e6b105;
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
   }
-  /* line 457, sass/f-media-queries/_7mq-pages.scss */
+  /* line 453, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .upcp-thumb-toggle-icon {
     display: none !important;
+  }
+  /* line 457, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .catalogo-content .catalogo-content-wrap .Grey-prod-cat-header-div {
+    border-bottom-width: 1px !important;
   }
   /* line 467, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap {
@@ -4959,14 +4963,22 @@ F. Media Queries
     font-size: 16px;
     font-size: 1rem;
     text-transform: uppercase;
-    height: 40px;
     overflow: hidden;
     text-align: center;
     margin-top: 0px;
     padding-top: 0px;
     margin-bottom: 1em;
   }
-  /* line 518, sass/f-media-queries/_7mq-pages.scss */
+  /* line 517, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li img {
+    display: block;
+    width: auto;
+    min-height: 110px;
+    max-height: 130px;
+    margin: 0px auto 1em;
+    text-align: center;
+  }
+  /* line 525, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li h6 {
     color: #b3b3b3;
     text-transform: uppercase;
@@ -4980,19 +4992,19 @@ F. Media Queries
     bottom: 1em;
     font-family: "Oxygen", sans-serif;
   }
-  /* line 531, sass/f-media-queries/_7mq-pages.scss */
+  /* line 538, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li p {
     font-weight: 300;
     font-size: 13px;
     font-size: 0.8125rem;
     margin-bottom: 5px;
   }
-  /* line 537, sass/f-media-queries/_7mq-pages.scss */
+  /* line 544, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul {
     margin: 0px 0px 0px 1em;
     list-style: square;
   }
-  /* line 540, sass/f-media-queries/_7mq-pages.scss */
+  /* line 547, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul li {
     font-weight: 300;
     font-size: 13px;
@@ -5001,53 +5013,65 @@ F. Media Queries
     list-style: square;
     width: 100%;
     margin: 0px;
-    padding-right: 0px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding: 0px;
+    margin-bottom: 0.5em;
+  }
+  /* line 557, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul li ul li {
+    list-style: disc;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+  /* line 562, sass/f-media-queries/_7mq-pages.scss */
+  .canvasfree .portfolio-cubes .portfolio-cubes-wrap .cubes li ul li ul li ul li {
+    list-style: circle;
+    padding: 0px;
+    margin-bottom: 3px;
   }
 }
 @media (min-width: 480px) {
-  /* line 568, sass/f-media-queries/_7mq-pages.scss */
+  /* line 585, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
     /**** CATÁLOGO *****/
     /**** PORTAFOLIO *****/
   }
-  /* line 575, sass/f-media-queries/_7mq-pages.scss */
+  /* line 592, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
     /* font-size: 34px;
     font-size: 2.125rem; */
   }
-  /* line 644, sass/f-media-queries/_7mq-pages.scss */
+  /* line 661, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap h2 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  /* line 668, sass/f-media-queries/_7mq-pages.scss */
+  /* line 685, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     padding: 1em 1.5em;
   }
-  /* line 688, sass/f-media-queries/_7mq-pages.scss */
+  /* line 705, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 693, sass/f-media-queries/_7mq-pages.scss */
+  /* line 710, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 719, sass/f-media-queries/_7mq-pages.scss */
+  /* line 736, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content {
     padding: 2em 4em;
   }
-  /* line 745, sass/f-media-queries/_7mq-pages.scss */
+  /* line 762, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content {
     background-color: #FFFFFF;
     padding: 1em;
   }
-  /* line 749, sass/f-media-queries/_7mq-pages.scss */
+  /* line 766, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap {
     max-width: 1000px;
     margin-left: auto;
@@ -5061,7 +5085,7 @@ F. Media Queries
     display: block;
     clear: both;
   }
-  /* line 763, sass/f-media-queries/_7mq-pages.scss */
+  /* line 780, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -5069,26 +5093,26 @@ F. Media Queries
 }
 @media (min-width: 768px) {
   /* ORIGINAL STYLES Pages */
-  /* line 807, sass/f-media-queries/_7mq-pages.scss */
+  /* line 824, sass/f-media-queries/_7mq-pages.scss */
   .page.page-one-column .entry-header,
   .pleiadesmoon-front-page.page-one-column .entry-header,
   .archive.page-one-column:not(.has-sidebar) .page-header {
     margin-bottom: 4em;
   }
 
-  /* line 812, sass/f-media-queries/_7mq-pages.scss */
+  /* line 829, sass/f-media-queries/_7mq-pages.scss */
   .page:not(.home) #content {
     padding-bottom: 3.25em;
   }
 
   /* 404 page */
-  /* line 816, sass/f-media-queries/_7mq-pages.scss */
+  /* line 833, sass/f-media-queries/_7mq-pages.scss */
   .error404 .page-content {
     padding-bottom: 9em;
   }
 
   /* Secondary */
-  /* line 820, sass/f-media-queries/_7mq-pages.scss */
+  /* line 837, sass/f-media-queries/_7mq-pages.scss */
   #secondary {
     font-size: 14px;
     font-size: 0.875rem;
@@ -5096,95 +5120,95 @@ F. Media Queries
   }
 
   /* Widgets */
-  /* line 826, sass/f-media-queries/_7mq-pages.scss */
+  /* line 843, sass/f-media-queries/_7mq-pages.scss */
   h2.widget-title {
     font-size: 11px;
     font-size: 0.6875rem;
     margin-bottom: 2em;
   }
 
-  /* line 833, sass/f-media-queries/_7mq-pages.scss */
+  /* line 850, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** ABOUT PAGE *****/
     /**** SOLUCIONES *****/
     /**** CATÁLOGO *****/
     /**** PORTAFOLIO *****/
   }
-  /* line 840, sass/f-media-queries/_7mq-pages.scss */
+  /* line 857, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .page-header .page-header-wrap h1 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 849, sass/f-media-queries/_7mq-pages.scss */
+  /* line 866, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content {
     padding: 4em 2em;
   }
-  /* line 853, sass/f-media-queries/_7mq-pages.scss */
+  /* line 870, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap h2 {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  /* line 857, sass/f-media-queries/_7mq-pages.scss */
+  /* line 874, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-img {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 860, sass/f-media-queries/_7mq-pages.scss */
+  /* line 877, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .about-content .about-content-wrap .about-text {
     width: 66.10169%;
     float: right;
     margin-right: 0;
     padding-left: 2em;
   }
-  /* line 912, sass/f-media-queries/_7mq-pages.scss */
+  /* line 929, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap h2 {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 916, sass/f-media-queries/_7mq-pages.scss */
+  /* line 933, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form {
     display: block;
     max-width: 600px;
     margin: 0px auto;
   }
-  /* line 926, sass/f-media-queries/_7mq-pages.scss */
+  /* line 943, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .contact-content .contact-content-wrap .wpcf7-form input[type=submit] {
     width: 120px;
   }
-  /* line 938, sass/f-media-queries/_7mq-pages.scss */
+  /* line 955, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content {
     padding: 1em 2em;
   }
-  /* line 958, sass/f-media-queries/_7mq-pages.scss */
+  /* line 975, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text p {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 963, sass/f-media-queries/_7mq-pages.scss */
+  /* line 980, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-content .solution-content-wrap .solution-text ul li {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 991, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1008, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h1 {
     font-size: 28	px;
     font-size: 1.75rem;
   }
-  /* line 995, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1012, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .solution-cta .solution-cta-wrap .cta-content h2 {
     font-size: 22px;
     font-size: 1.375rem;
   }
-  /* line 1023, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1040, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-thumb-toggle-icon {
     display: block;
   }
-  /* line 1026, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1043, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .catalogo-content .catalogo-content-wrap .prod-cat-header-div .upcp-details-toggle-icon {
     display: block;
   }
-  /* line 1045, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1062, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree .portfolio-content .portfolio-content-wrap .portfolio-text p {
     font-size: 22px;
     font-size: 1.375rem;
@@ -5193,7 +5217,7 @@ F. Media Queries
 }
 @media (min-width: 1072px) {
   /**** ABOUT PAGE *****/
-  /* line 1132, sass/f-media-queries/_7mq-pages.scss */
+  /* line 1149, sass/f-media-queries/_7mq-pages.scss */
   .canvasfree {
     /**** CATÁLOGO *****/
   }

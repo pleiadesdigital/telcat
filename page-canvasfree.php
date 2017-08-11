@@ -10,6 +10,8 @@
     $content_part = 'soluciones';
   } elseif (is_page('catalogo')) {
     $content_part = 'catalogo';
+  } elseif (is_page('partners')) {
+    $content_part = 'partners';
   } elseif (is_page('portafolio')) {
     $content_part = 'portfolio';
   } else {
